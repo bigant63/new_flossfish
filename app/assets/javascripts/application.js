@@ -13,6 +13,6 @@
 //= require angular
 //= require foundation
 //= require modernizr
-//= require turbolinks
+/* require turbolinks*/
 //= require_tree .
 $(document).foundation();

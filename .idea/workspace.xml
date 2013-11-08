@@ -64,11 +64,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="48" selection-start="964" selection-end="964" vertical-scroll-proportion="0.86513996" vertical-offset="0" max-vertical-offset="1071">
+            <state line="7" column="41" selection-start="187" selection-end="187" vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="1071">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="runtimes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://C:/Cygwin64/lib/ruby/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/runtimes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="27" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1700">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="2" selection-start="647" selection-end="647" vertical-scroll-proportion="0.3231939" vertical-offset="0" max-vertical-offset="789">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -138,16 +158,17 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_base.scss" />
         <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="C:/Cygwin64/lib/ruby/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/runtimes.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1427" />
-    <option name="y" value="64" />
+    <option name="x" value="1488" />
+    <option name="y" value="301" />
     <option name="width" value="1238" />
     <option name="height" value="969" />
   </component>
@@ -806,15 +827,15 @@
       <workItem from="1383860534320" duration="266000" />
       <workItem from="1383863938551" duration="65000" />
       <workItem from="1383864177972" duration="7598000" />
-      <workItem from="1383945871436" duration="1505000" />
+      <workItem from="1383945871436" duration="4480000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9434000" />
+    <option name="totallyTimeSpent" value="12409000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1427" y="64" width="1238" height="969" extended-state="0" />
+    <frame x="1488" y="301" width="1238" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -922,11 +943,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="46" selection-start="599" selection-end="599" vertical-scroll-proportion="0.25154132" vertical-offset="0" max-vertical-offset="811" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_base.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="15" column="52" selection-start="276" selection-end="276" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="476">
@@ -969,8 +985,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="48" selection-start="964" selection-end="964" vertical-scroll-proportion="0.86513996" vertical-offset="0" max-vertical-offset="1071">
+        <state line="7" column="41" selection-start="187" selection-end="187" vertical-scroll-proportion="-4.76" vertical-offset="0" max-vertical-offset="1071">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Cygwin64/lib/ruby/gems/1.9.1/gems/execjs-2.0.2/lib/execjs/runtimes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="27" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="2" selection-start="647" selection-end="647" vertical-scroll-proportion="0.3231939" vertical-offset="0" max-vertical-offset="789">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
