@@ -26,7 +26,7 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 0.3.37)
     addressable (2.3.5)
-    angularjs-rails (1.0.8)
+    angularjs-rails (1.2.0)
     arel (4.0.1)
     atomic (1.1.14)
     builder (3.1.4)
@@ -76,6 +76,7 @@ GEM
       sprockets (~> 2.0)
     multi_json (1.8.2)
     netrc (0.7.7)
+    pg (0.15.1)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -88,6 +89,11 @@ GEM
       bundler (>= 1.3.0, < 2.0)
       railties (= 4.0.1)
       sprockets-rails (~> 2.0.0)
+    rails_12factor (0.0.2)
+      rails_serve_static_assets
+      rails_stdout_logging
+    rails_serve_static_assets (0.0.1)
+    rails_stdout_logging (0.0.3)
     railties (4.0.1)
       actionpack (= 4.0.1)
       activesupport (= 4.0.1)
@@ -127,7 +133,7 @@ GEM
     turbolinks (1.3.0)
       coffee-rails
     tzinfo (0.3.38)
-    uglifier (2.3.0)
+    uglifier (2.3.1)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     zurb-foundation (4.3.2)
@@ -144,7 +150,9 @@ DEPENDENCIES
   jbuilder (~> 1.2)
   jquery-rails
   modernizr
+  pg (= 0.15.1)
   rails (= 4.0.1)
+  rails_12factor (= 0.0.2)
   sass-rails (~> 4.0.0)
   sdoc
   sqlite3 (= 1.3.8)
