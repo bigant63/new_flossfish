@@ -9,26 +9,34 @@ group :development do
   gem 'sqlite3', '1.3.8'
 end
 
+group :test do
+  gem 'selenium-webdriver', '2.35.1'
+  gem 'capybara', '2.1.0'
+end
+
 gem 'heroku'
 
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
+
+#gem 'therubyracer', platforms: :ruby
+#gem  'libv8', '3.11.8'
+
 
 # Use angular as the JavaScript library
 #group :assets do
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
-gem 'sass-rails', '~> 4.0.0'
 gem 'angularjs-rails'
+gem 'sass-rails', '~> 4.0.0'
 gem 'compass-rails', '~> 2.0.alpha.0'
 gem 'zurb-foundation'
-gem 'modernizr'
+gem 'modernizr-rails'
 gem 'jquery-rails'
 #end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-#gem 'turbolinks'
+gem 'turbolinks'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

@@ -9,4 +9,19 @@
 
 # Make sure your secret_key_base is kept private
 # if you're sharing your code publicly.
-NewFlossfish::Application.config.secret_key_base = 'ba97b84de7dd63f665f6ee42b68fd8afe5a894fac7c973dc25b9f1272ae84f978ea11e8ce8039cd9faee9f8920e05bfe6f5b89adfe41664996da6e39fe8d352c'
+require 'securerandom'
+
+def secure_token
+  token_file = Rails.root.join('.secret')
+  if File.exist?(token_file)
+    # Use the existing token.
+    File.read(token_file).chomp
+  else
+    # Generate a new token and store it in token_file.
+    token = SecureRandom.hex(64)
+    File.write(token_file, token)
+    token
+  end
+end
+
+NewFlossfish::Application.config.secret_key_base = secure_token
