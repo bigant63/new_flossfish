@@ -1,5 +1,5 @@
 NewFlossfish::Application.routes.draw do
-  get "greetings/hello"
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -15,6 +15,22 @@ NewFlossfish::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
+    #for video list
+    get "video/playlist"
+  
+    #for locale
+    get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
+    
+    
+    root :to => 'static#index'
+    
+         get "static/index"
+         get "static/order"
+         get "static/contactus"
+         get "static/instructions"
+         get "static/moreinfo"
+
+     
   # Example resource route with options:
   #   resources :products do
   #     member do

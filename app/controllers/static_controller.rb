@@ -1,6 +1,7 @@
 class StaticController < ApplicationController
 
   def index
+    #we want the header to change for the various supported languages.
     @header_object = {:title => t(:'titles.home'), :desc => t(:'meta.default')}
   end
 

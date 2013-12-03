@@ -2,7 +2,7 @@
     'es' => {
 
         :titles => {
-            :homepage => "Wordchuck Ruby on Rails Demonstration Application",
+            :home => "Wordchuck Ruby on Rails Demonstration Application",
             :welcome => "Bienvinido de flossfish.com",
             :buckets => {
                 :section => "Buckets and Items",
