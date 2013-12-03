@@ -1,0 +1,17 @@
+<header>
+    <div id="logo">
+    </div>
+    <ul class="nav-links">
+       <li><%= link_to t(:'navigation.home'), root_path %></li>
+        <li><%= link_to t(:'navigation.order'), static_order_path %></li>
+        <li><%= link_to t(:'navigation.instructions'),  static_instructions_path %></li>
+        <li><%= link_to t(:'navigation.more_info'), static_moreinfo_path  %></li>
+        <li><%= link_to t(:'navigation.contact_us'), static_contactus_path %></li>
+    </ul>
+
+    <ul class="social-links">
+        <li></li>
+    </ul>
+
+    <%= render :partial => 'shared/info_widget' %>
+</header>

@@ -1,0 +1,7 @@
+<%= javascript_include_tag t(:'jw_player_path') %>
+<%= javascript_include_tag "application" %>
+<%= javascript_include_tag "modernizr" %>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"></script>
+
+<%= render :partial => 'shared/google-analytics' if ENV["RAILS_ENV"] == 'production' %>
