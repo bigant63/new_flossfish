@@ -13,6 +13,7 @@
             :instructions => "Instructions page - Welcome to flossfish.com",
             :more_info => "More Information page - Welcome to flossfish.com",
             :contact_us => "Contact us page - Welcome to flossfish.com",
+            :reviews => "Reviews page - Welcome to flossfish.com",
             :videos => ">FlossFish video play list"
         },
 

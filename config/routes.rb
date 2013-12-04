@@ -29,6 +29,7 @@ NewFlossfish::Application.routes.draw do
          get "static/contactus"
          get "static/instructions"
          get "static/moreinfo"
+         get "static/reviews"
 
      
   # Example resource route with options:
@@ -70,4 +71,6 @@ NewFlossfish::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+   get ':action' => 'static#:action'
 end

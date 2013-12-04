@@ -21,6 +21,10 @@ class StaticController < ApplicationController
     @header_object = {:title => t(:'titles.contact_us'), :desc => t(:'meta.default')}
   end
 
+  def reviews
+    @header_object = {:title => t(:'titles.reviews'), :desc => t(:'meta.default')}
+  end
+
   def show
     #if you need a controller in show
     case params[:id]
@@ -30,6 +34,8 @@ class StaticController < ApplicationController
         redirect_to static_instructions_path
       when "moreinfo"
         redirect_to static_moreinfo_path
+      when "reviews"
+        redirect_to static_reviews_path
       when "contactus"
         redirect_to static_contactus_path
       else
