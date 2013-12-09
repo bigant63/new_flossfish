@@ -138,6 +138,7 @@
 
     :images => {
     :alts => {
+        :logo => "flossFish logo",
         :wcdemo => "This is an image! in english"
     }
 },

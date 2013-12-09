@@ -1,0 +1,37 @@
+@import "modules/colors";
+
+header{
+  background: transparent url('/images/header-bg.png') repeat-x 0 0;
+  height: 141px;
+
+
+  img#main-logo{
+    float: left;
+    margin:0 65px 0 40px;
+  }
+
+  nav{
+    float: left;
+    margin-top: 80px;
+
+    ul#main-nav{
+      li{
+
+        a{
+          color:$light_blue;
+          &:hover{
+            color:$w;
+          }
+          &:visited{
+            color:$w;
+          }
+          &:active{
+            color:$light_blue;
+          }
+        }
+      }
+
+   }
+  }
+
+}

@@ -1,0 +1,9 @@
+%header
+ %img{:src => "images/logo.png", :id => "main-logo", :alt => t(:"images.alts.logo")}/
+ /Nav Bar
+ %nav
+  %div
+   %ul#main-nav.inline-list
+    = list_of(["Home", "About", "Contact", "FAQ"], {class: "nav"}) do |item|
+     %a{ :href => "#" }= item
+ /End Nav
