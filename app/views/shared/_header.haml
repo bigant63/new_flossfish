@@ -4,9 +4,9 @@
  %nav
   %div
    %ul#main-nav.inline-list
-    = list_of(t(:"navigation").values, {class: "nav"}) do |item|
+    = list_of(t(:"navigation"), {class: "nav"}) do |key,item|
      -unless item.downcase.start_with?(@page_name.downcase)
-      %a{ :href => get_nav(item) }= item
+      %a{ :href => get_nav(key.to_s) }= item
      -else
       = item
  /End Nav
