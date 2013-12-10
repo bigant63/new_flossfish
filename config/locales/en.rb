@@ -86,14 +86,12 @@
       }
     },
 
-
         :navigation => {
           :home => "Home",
           :instructions => "Instructions",
           :more_info => "More Information",
           :order => "Order",
-          :contact_us => "Contact us",
-          :login => "Log In"
+          :contact_us => "Contact us"
         },
 
     ## Website content.

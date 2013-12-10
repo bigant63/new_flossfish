@@ -1,4 +1,6 @@
 class ApplicationController < ActionController::Base
+
+
   protect_from_forgery
   before_filter :set_available_locales, :set_locale, :valid_locale?
 

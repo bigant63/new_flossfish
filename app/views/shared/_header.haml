@@ -4,6 +4,10 @@
  %nav
   %div
    %ul#main-nav.inline-list
-    = list_of(["Home", "About", "Contact", "FAQ"], {class: "nav"}) do |item|
-     %a{ :href => "#" }= item
+    = list_of(t(:"navigation").values, {class: "nav"}) do |item|
+     -unless item.downcase.start_with?(@page_name.downcase)
+      %a{ :href => get_nav(item) }= item
+     -else
+      = item
  /End Nav
+ /todo you want to not add path if the current page is dont put a link
