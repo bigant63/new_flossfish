@@ -8,22 +8,27 @@ class StaticController < ApplicationController
 
   def order
     @header_object = {:title => t(:'titles.order'), :desc => t(:'meta.default')}
+    @page_name = 'order'
   end
 
   def instructions
     @header_object = {:title => t(:'titles.instructions'), :desc => t(:'meta.default')}
+    @page_name = 'instructions'
   end
 
   def moreinfo
     @header_object = {:title => t(:'titles.more_info'), :desc => t(:'meta.default')}
+    @page_name = 'moreinfo'
   end
 
   def contactus
     @header_object = {:title => t(:'titles.contact_us'), :desc => t(:'meta.default')}
+    @page_name = 'contactus'
   end
 
   def reviews
     @header_object = {:title => t(:'titles.reviews'), :desc => t(:'meta.default')}
+    @page_name = 'reviews'
   end
 
   def show
