@@ -3,32 +3,32 @@ class StaticController < ApplicationController
   def index
     #we want the header to change for the various supported languages.
     @header_object = {:title => t(:'titles.home'), :desc => t(:'meta.default')}
-    @page_name = 'home'
+    @page_name = root_path
   end
 
   def order
     @header_object = {:title => t(:'titles.order'), :desc => t(:'meta.default')}
-    @page_name = 'order'
+    @page_name = static_order_path
   end
 
   def instructions
     @header_object = {:title => t(:'titles.instructions'), :desc => t(:'meta.default')}
-    @page_name = 'instructions'
+    @page_name = static_instructions_path
   end
 
   def moreinfo
     @header_object = {:title => t(:'titles.more_info'), :desc => t(:'meta.default')}
-    @page_name = 'moreinfo'
+    @page_name = static_moreinfo_path
   end
 
   def contactus
     @header_object = {:title => t(:'titles.contact_us'), :desc => t(:'meta.default')}
-    @page_name = 'contactus'
+    @page_name = static_contactus_path
   end
 
   def reviews
     @header_object = {:title => t(:'titles.reviews'), :desc => t(:'meta.default')}
-    @page_name = 'reviews'
+    @page_name = static_reviews_path
   end
 
   def show
