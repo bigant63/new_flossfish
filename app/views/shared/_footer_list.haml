@@ -1,0 +1,5 @@
+%ul
+  %li
+    #{var[:label]}
+    = list_of(var[:links]) do |item|
+      %a{:href => item[:link]}=item[:label]

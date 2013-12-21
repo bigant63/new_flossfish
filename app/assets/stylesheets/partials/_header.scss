@@ -16,19 +16,13 @@ header{
 
     ul#main-nav{
       li{
+ /*       &:first-child{
+          background: transparent url('/images/icons/home-icon-w.png') no-repeat 0 0;
+          width: 20px;
+          height: 25px;
+        }*/
 
-        a{
-          color:$light_blue;
-          &:hover{
-            color:$w;
-          }
-          &:visited{
-            color:$w;
-          }
-          &:active{
-            color:$light_blue;
-          }
-        }
+
       }
 
    }

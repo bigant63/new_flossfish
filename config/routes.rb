@@ -19,9 +19,9 @@ NewFlossfish::Application.routes.draw do
     get "video/playlist"
   
     #for locale
-    get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
+    #get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
     
-    
+  #todo see if you can link w/o the "/static" in front of your paths.
     root :to => 'static#index'
     
          get "static/index"

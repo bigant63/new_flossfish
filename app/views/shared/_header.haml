@@ -1,14 +1,14 @@
 %header
- %img{:src => "images/logo.png", :id => "main-logo", :alt => t(:"images.alts.logo")}/
+ %a{:href => root_path}
+  %img{:src => "/images/logo.png", :id => "main-logo", :alt => t(:"images.alts.logo")}/
  /Nav Bar
  %nav
   %div
    %ul#main-nav.inline-list
-    = list_of(t(:"navigation"), {class: "nav"}) do |key,item|
-     -unless item.downcase == 'home'
+    = list_of(t(:"navigation.main_nav")) do |key,item|
+     -unless item.downcase == t(:"navigation.main_nav.home").downcase
       -unless item.downcase.start_with?(@page_name.downcase)
        %a{ :href => eval(get_nav(key.to_s)) }= item
       -else
        = item
  /End Nav
- /todo you want to not add path if the current page is dont put a link

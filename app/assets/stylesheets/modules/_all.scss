@@ -1,0 +1,19 @@
+@import "modules/colors";
+
+a{
+  color:$light_blue;
+
+  &:hover{
+    color:$w;
+  }
+  &:visited{
+    color:$light_blue;
+  }
+  &:active{
+    color:$light_blue;
+  }
+}
+
+li{
+  list-style: none;
+}
