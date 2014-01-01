@@ -1,10 +1,11 @@
-%ul.video-list
- = list_of(t(:"media.play_list.items")) do |item|
-  %img{:src => item[:tnail_path], :alt => item[:description]}
-  %div.video-info
-   %a{:href => item[:link], :data=> {"still-path" => item[:still_path]} }=item[:title]
-   %span.video-details
-    %ul
-     %li=item[:author]
-     %li=t(:"labels.time") + ":" + item[:duration]
-    %p=item[:description]
+#video-list-container
+ %ul.video-list
+  = list_of(t(:"media.play_list.items")) do |item|
+   %img{:src => item[:tnail_path], :alt => item[:description]}
+    %div.video-info.large-9.columns
+     %a{:href => item[:link], :data=> {"still-path" => item[:still_path]} }=item[:title]
+     %span.video-details
+      %ul.large-4.columns
+       %li=item[:author]
+       %li=t(:"labels.time") + ": " + item[:duration]
+      %p.large-8.columns=item[:description]

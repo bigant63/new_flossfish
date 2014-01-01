@@ -1,9 +1,9 @@
 @import "modules/colors";
+@import "modules/mixins";
 
 footer {
   display: inline-block;
   background-color: $grey;
-
   width: 100%;
 
   ul {
@@ -12,6 +12,8 @@ footer {
     li {
       list-style: none;
       color: #fff;
+
+      @include light_links;
     }
   }
 

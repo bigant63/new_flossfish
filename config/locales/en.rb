@@ -2,7 +2,8 @@
     'en' => {
 
         #
-        :jw_player_path => 'jwplayer/5.10/jwplayer',
+        :jw_player_path => 'jwplayer/5.10',
+        :jw_player_skin_path => 'jwplayer/skins/%{skin_name}/%{skin_name}.xml',
 
 
         ## Ruby and Rails standard items required for basic presentation of dates, times, numbers
@@ -34,7 +35,7 @@
                                :description => 'This is a 3D animated video showing how the flossFish works. The video shows flossing with braces using the flossFish tool and shoots camera angels from in front and behind the teeth.',
                                :tnail_path => '/images/video_tnails/animated-tnail.png',
                                :still_path => '/images/video_tnails/animated-still.png',
-                               :video_path => '/assets/videos/animated-instructions',
+                               :video_path => '/videos/animated-instructions.webm',
                                :duration => '64',
                                :provider => 'youtube',
                                :author => 'Hilltop Corporation',
@@ -47,7 +48,7 @@
                                :description => 'This is the live video showing how the flossFish works. The video shows the clinical trials video of the flossFish.',
                                :tnail_path => '/images/video_tnails/video_trial-tnail.png',
                                :still_path => '/images/video_tnails/video_trial-still.png',
-                               :video_path => '/assets/videos/trial-instructions',
+                               :video_path => '/videos/trial-instructions.webm',
                                :duration => '25',
                                :provider => 'youtube',
                                :author => 'Hilltop Corporation',
@@ -57,10 +58,10 @@
                            },
                            {
                                :title => 'FlossFish Hygienist Video Instructions',
-                               :description => 'This is the YouTube video showing how the hygienists at Dr. Powell&#39;s office uses the flossFish to floss patients.',
+                               :description => "This is the YouTube video showing how the hygienists at Dr. Powell's office uses the flossFish to floss patients.",
                                :tnail_path => '/images/video_tnails/clinical-tnail.png',
                                :still_path => '/images/video_tnails/clinical-still.png',
-                               :video_path => '/assets/videos/hygienists-video-yt',
+                               :video_path => '/videos/hygienists-video-yt',
                                :duration => '63',
                                :provider => 'youtube',
                                :author => 'Dr. Powell',
@@ -73,7 +74,7 @@
                                :description => 'This is the YouTube video showing youtube name CityLoveShoes flosses using the flossFish.',
                                :tnail_path => '/images/video_tnails/help_tnail.png',
                                :still_path => '/images/video_tnails/help_stil.png',
-                               :video_path => '/assets/videos/hygienists-video-yt',
+                               :video_path => '/videos/hygienists-video-yt',
                                :duration => '660.39',
                                :provider => 'youtube',
                                :author => 'CityLoveShoes',

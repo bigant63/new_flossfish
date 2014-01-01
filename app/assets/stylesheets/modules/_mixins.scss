@@ -1,0 +1,15 @@
+@mixin light_links(){
+  a{
+    color:$light_blue;
+
+    &:hover{
+      color:$w;
+    }
+    &:visited{
+      color:$light_blue;
+    }
+    &:active{
+      color:$light_blue;
+    }
+  }
+}

@@ -1,10 +1,18 @@
-#video-player
-  = render :partial => 'shared/video_list'
+#video-container
+  #video-player
+  =render :partial => 'shared/video_list'
 
-:javascript
-    jwplayer("video-player").setup({
-        file: "/uploads/example.mp4",
-        height: 360,
-        image: "/uploads/example.jpg",
-        width: 640
-    });
+  %script{:src =>"#{t(:"jw_player_path")}/jwplayer.js"}
+  :javascript
+    jwplayer.key="74992"
+
+  :javascript
+
+      jwplayer("video-player").setup({
+          flashplayer: "#{t(:"jw_player_path")}/player.swf",
+          skin: "#{t(:"jw_player_skin_path", :skin_name => "glow")}",
+          file: "#{t(:"media.play_list.items").first[:video_path]}",
+          height: 360,
+          image: "#{t(:"media.play_list.items").first[:still_path]}",
+          width: 640
+      });

@@ -1,8 +1,11 @@
 @import "modules/colors";
+@import "modules/mixins";
 
 header{
   background: transparent url('/images/header-bg.png') repeat-x 0 0;
   height: 141px;
+
+ @include light_links;
 
 
   img#main-logo{

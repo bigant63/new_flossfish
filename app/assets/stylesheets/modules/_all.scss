@@ -1,16 +1,16 @@
 @import "modules/colors";
 
 a{
-  color:$light_blue;
+  color:$med_blue;
 
   &:hover{
-    color:$w;
+    color:$dark_orange;
   }
   &:visited{
-    color:$light_blue;
+    color:$med_blue;
   }
   &:active{
-    color:$light_blue;
+    color:$med_blue;
   }
 }
 
