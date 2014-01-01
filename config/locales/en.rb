@@ -176,7 +176,7 @@
         },
 
     :labels =>{
-        time => 'Time'
+        :time => 'Time'
         }
 
     }
