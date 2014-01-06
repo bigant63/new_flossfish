@@ -1,0 +1,18 @@
+%div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
+ / Video player
+ %div.large-7.columns
+  = render :partial => 'shared/video_player'
+ /end Video player
+
+ /start side bar
+ %div.large-3.columns
+  %div
+   /todo: language bundle this
+   %h2 What is the flossFish?
+   %p Ho-ho-ho! fortune of halitosis.
+
+  %article
+   /todo: you will need to have a controller get a random review then include it here
+   = render :partial => 'shared/reviews_include'
+
+

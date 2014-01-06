@@ -4,16 +4,9 @@
     <list default="true" id="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" name="Default" comment="" />
     <ignored path="new_flossfish.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/_video_player.haml" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388550164344" ignored="false" />
-    <file path="/_video_list.haml" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388555855166" ignored="false" />
-    <file path="/en.rb" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388549968402" ignored="false" />
-    <file path="/_video_player.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388559364273" ignored="false" />
-    <file path="/main.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388552187485" ignored="false" />
-    <file path="/typography.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388555519553" ignored="false" />
-    <file path="/_all.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388556557242" ignored="false" />
-    <file path="/a.dummy" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388557242263" ignored="false" />
-    <file path="/_mixins.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388559872230" ignored="false" />
-    <file path="/_header.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388559919798" ignored="false" />
+    <file path="/index.html.erb" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388908074638" ignored="false" />
+    <file path="/index.html.haml" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388908934169" ignored="false" />
+    <file path="/_header.scss" changelist="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" time="1388909095998" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,28 +72,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="_footer_list.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_footer_list.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="99" selection-start="109" selection-end="109" vertical-scroll-proportion="-2.5">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="_header.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_header.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="0" selection-start="26" selection-end="51" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_js_script_includes.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_js_script_includes.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="113" selection-start="415" selection-end="415" vertical-scroll-proportion="-5.0">
+            <state line="3" column="36" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,29 +84,25 @@
       <file leaf-file-name="en.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/locales/en.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="104" selection-start="3575" selection-end="3575" vertical-scroll-proportion="-5.0">
+            <state line="164" column="18" selection-start="9246" selection-end="9246" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_video_player.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_video_player.haml">
+      <file leaf-file-name="_js_script_includes.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/shared/_js_script_includes.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="35" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.25">
-              <folding>
-                <element signature="e#96#116#1" expanded="true" />
-                <element signature="n#t(:&quot;jw_player_path&quot;)#0;n#!!top" expanded="true" />
-                <element signature="n#t(:&quot;jw_player_skin_path&quot;, :skin_name =&gt; &quot;glow&quot;)#0;n#!!top" expanded="true" />
-              </folding>
+            <state line="5" column="4" selection-start="312" selection-end="312" vertical-scroll-proportion="0.12057878">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_footer.scss" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_footer.scss">
+      <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/static/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="22" selection-start="251" selection-end="251" vertical-scroll-proportion="0.3482972">
+            <state line="12" column="106" selection-start="329" selection-end="329" vertical-scroll-proportion="-7.5">
               <folding />
             </state>
           </provider>
@@ -140,19 +111,35 @@
       <file leaf-file-name="_video_player.scss" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_video_player.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="114" selection-start="674" selection-end="674" vertical-scroll-proportion="-19.2">
+            <state line="21" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_video_list.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/shared/_video_list.haml">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="98" selection-start="450" selection-end="450" vertical-scroll-proportion="-6.25">
-              <folding>
-                <element signature="e#364#381#0" expanded="true" />
-              </folding>
+            <state line="36" column="22" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bower.json" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bower.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fix_sass_rails.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/initializers/fix_sass_rails.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -160,7 +147,7 @@
       <file leaf-file-name="_header.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/shared/_header.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="39" selection-start="170" selection-end="170" vertical-scroll-proportion="-3.75">
+            <state line="3" column="80" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -176,28 +163,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/static/index.html.erb" />
-        <option value="$USER_HOME$/Desktop/DDSBATCHSTATUS_TargetcomDDSProgram_20131231145129386.xml" />
-        <option value="$USER_HOME$/Desktop/DDSBATCHREQ_TargetcomDDSProgram_1002501_2013122419070000.XML" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/app/views/shared/_js_script_includes.erb" />
-        <option value="$PROJECT_DIR$/public/jwplayer/5.10/jwplayer.js" />
-        <option value="$PROJECT_DIR$/app/views/shared/_video_player.haml" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/main.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/typography.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/modules/_all.scss" />
-        <option value="$PROJECT_DIR$/app/views/shared/_video_list.haml" />
         <option value="$PROJECT_DIR$/config/locales/en.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_video_player.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/modules/_mixins.scss" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_header.scss" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_footer.scss" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_video_player.scss" />
+        <option value="$PROJECT_DIR$/config/initializers/fix_sass_rails.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_video_player.haml" />
+        <option value="$PROJECT_DIR$/app/views/shared/_google-analytics.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_js_script_includes.erb" />
+        <option value="$PROJECT_DIR$/app/views/static/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_header.haml" />
+        <option value="$PROJECT_DIR$/app/views/static/index.html.haml" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/partials/_header.scss" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/bower.json" />
+        <option value="$PROJECT_DIR$/config.rb" />
+        <option value="$PROJECT_DIR$/app/views/shared/_js_script_includes.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="182" />
-    <option name="y" value="60" />
+    <option name="x" value="155" />
+    <option name="y" value="51" />
     <option name="width" value="1216" />
     <option name="height" value="817" />
   </component>
@@ -244,9 +231,7 @@
     </navigator>
     <panes>
       <pane id="RailsProjectView" />
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,24 +293,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="videos" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,81 +548,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="stylesheets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -681,27 +574,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="new_flossfish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -717,15 +594,15 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="GoToClass.includeJavaFiles" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="LayoutCode.rearrangeEntriesRuby" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -903,6 +780,13 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1182,14 +1066,19 @@
       <workItem from="1388443433903" duration="1706000" />
       <workItem from="1388502490070" duration="10961000" />
       <workItem from="1388533118863" duration="701000" />
+      <workItem from="1388677153847" duration="635000" />
+      <workItem from="1388699681541" duration="1867000" />
+      <workItem from="1388765582269" duration="154000" />
+      <workItem from="1388770932770" duration="1041000" />
+      <workItem from="1388784185861" duration="1544000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100652000" />
+    <option name="totallyTimeSpent" value="105893000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="182" y="60" width="1216" height="817" extended-state="0" />
+    <frame x="155" y="51" width="1216" height="817" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -1210,7 +1099,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26324788" sideWeight="0.6241033" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26153848" sideWeight="0.6241033" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32897863" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1292,123 +1181,114 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/main.scss">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_footer.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="179" selection-end="179" vertical-scroll-proportion="0.18575852">
+        <state line="38" column="0" selection-start="547" selection-end="547" vertical-scroll-proportion="0.8606811">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/typography.scss">
+    <entry file="file://$PROJECT_DIR$/config/initializers/fix_sass_rails.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="106" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/modules/_colors.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="37" selection-end="46" vertical-scroll-proportion="0.06965944">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_video_player.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="35" selection-start="68" selection-end="68" vertical-scroll-proportion="-1.25">
-          <folding>
-            <element signature="e#96#116#1" expanded="true" />
-            <element signature="n#t(:&quot;jw_player_path&quot;)#0;n#!!top" expanded="true" />
-            <element signature="n#t(:&quot;jw_player_skin_path&quot;, :skin_name =&gt; &quot;glow&quot;)#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_buttons.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="0" column="12" selection-start="12" selection-end="12" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/shared/_footer_list.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="99" selection-start="109" selection-end="109" vertical-scroll-proportion="-2.5">
+        <state line="4" column="99" selection-start="109" selection-end="109" vertical-scroll-proportion="0.096463025">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/modules/_all.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_footer.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="102" selection-start="126" selection-end="126" vertical-scroll-proportion="0.23219815">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_js_script_includes.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_video_player.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="113" selection-start="415" selection-end="415" vertical-scroll-proportion="-5.0">
+        <state line="4" column="0" selection-start="76" selection-end="131" vertical-scroll-proportion="0.096463025">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_base.scss">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_head.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="9" selection-start="43" selection-end="43" vertical-scroll-proportion="0.0390625">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/shared/_video_list.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="98" selection-start="450" selection-end="450" vertical-scroll-proportion="-6.25">
-          <folding>
-            <element signature="e#364#381#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/locales/en.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="104" selection-start="3575" selection-end="3575" vertical-scroll-proportion="-5.0">
+        <state line="164" column="18" selection-start="9246" selection-end="9246" vertical-scroll-proportion="0.0">
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_video_player.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="114" selection-start="674" selection-end="674" vertical-scroll-proportion="-19.2">
+        <state line="21" column="0" selection-start="464" selection-end="464" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/nav_helper.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_header.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="65" selection-start="269" selection-end="269" vertical-scroll-proportion="0.0">
+        <state line="3" column="80" selection-start="128" selection-end="128" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/static/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="106" selection-start="329" selection-end="329" vertical-scroll-proportion="-7.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_header.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="26" selection-end="51" vertical-scroll-proportion="0.0">
+        <state line="3" column="36" selection-start="90" selection-end="90" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/modules/_mixins.scss">
+    <entry file="file://$PROJECT_DIR$/.bowerrc">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="7" selection-start="7" selection-end="7" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/partials/_footer.scss">
+    <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="22" selection-start="251" selection-end="251" vertical-scroll-proportion="0.3482972">
+        <state line="36" column="22" selection-start="783" selection-end="783" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.20897833">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bower.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/shared/_js_script_includes.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="4" selection-start="312" selection-end="312" vertical-scroll-proportion="0.12057878">
           <folding />
         </state>
       </provider>

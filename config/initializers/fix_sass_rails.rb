@@ -1,1 +1,1 @@
-Rails.application.config.middleware.delete Sass::Plugin::Rack
+#Rails.application.config.middleware.delete Sass::Plugin::Rack
