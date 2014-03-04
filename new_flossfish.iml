@@ -2,6 +2,12 @@
 <module type="RUBY_MODULE" version="4">
   <component name="CompassSettings">
     <option name="compassExecutableFilePath" value="C:/Cygwin64/lib/ruby/gems/1.9.1/gems/compass-0.12.2/bin/compass" />
+    <option name="compassSupportEnabled" value="true" />
+    <option name="importPaths">
+      <list>
+        <option value="$MODULE_DIR$/bower_components/foundation/scss" />
+      </list>
+    </option>
   </component>
   <component name="FacetManager">
     <facet type="RailsFacetType" name="Ruby on Rails">
@@ -22,6 +28,7 @@
     <orderEntry type="jdk" jdkName="ruby-1.9.3-p448" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="sass-stdlib" level="application" />
+    <orderEntry type="library" name="compass-library" level="project" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />

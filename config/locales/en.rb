@@ -122,7 +122,7 @@
         :homepage => {
             :introduction => '>Welcome to flossfish.com. My name is Franky Fish. Have braces? Hate to floss? The flossFish is the perfect flossing tool for braces',
             :what_is_flossfish => 'What is the FlossFish?',
-            :flossfish_is => 'The flossFish(TM) uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the &#60;a href=#{instuctions_link}"&#62;ainstructions&#60;a/a&#62;a page.',
+            :flossfish_is => 'The flossFish<sup>(TM)</sup> uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the <a href=#{instuctions_link}">instructions</a> page.',
 
 
             :selection => 'The selected locale is automatically passed back to the application within the URL for each request, but <i>does not</i> require explicit setting of the locale within named routes, or session[]. Once setup, locale selection just works.',

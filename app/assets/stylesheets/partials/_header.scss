@@ -1,37 +1,61 @@
 @import "modules/colors";
 @import "modules/mixins";
+@import "foundation_and_overrides";
+
 /*
 todo: start scaling this for mobile
 */
 
-header{
+header {
   background: transparent url('/images/header-bg.png') repeat-x 0 0;
   height: 141px;
 
- @include light_links;
+  @include light_links;
 
-
-  img#main-logo{
+  /*  @media screen and (min-width: $site_width_desktop) {}*/
+  img#main-logo {
     float: left;
-    margin:0 65px 0 40px;
+    margin: 0 0 0 10px;
+
+    //large screen
+    @media only screen and (min-width: $small-screen) {
+      margin: 0 35px 0 40px;
+    }
+
   }
 
-  nav{
+  nav {
     float: left;
-    margin-top: 80px;
+    margin: 10px 0 0 10px;
 
-    ul#main-nav{
-      li{
- /*       &:first-child{
-          background: transparent url('/images/icons/home-icon-w.png') no-repeat 0 0;
-          width: 20px;
-          height: 25px;
-        }*/
+    //large screen
+    @media only screen and (min-width: $smart-phone-screen - 15px) {
+      margin-top: 80px;
+    }
 
+    @media only screen and (max-width: $small-screen) {
+      margin-right: 20%;
+    }
+
+
+    ul#main-nav.inline-list {
+      li {
+        float: none;
+
+        @media only screen and (min-width: $small-screen) {
+          float: left;
+        }
+
+          a:hover {
+            color: $med_blue;
+
+            @media only screen and (min-width: $smart-phone-screen - 15px)  {
+              color: $w;
+            }
+          }
 
       }
-
-   }
+    }
   }
 
 }
