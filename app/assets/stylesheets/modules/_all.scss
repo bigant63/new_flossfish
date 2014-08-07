@@ -1,4 +1,5 @@
 @import "modules/colors";
+@import "partials/base";
 
 a{
   color:$med_blue;
@@ -16,4 +17,8 @@ a{
 
 li{
   list-style: none;
+}
+
+body, p, ol, ul, td {
+  font-size: $base-font-size;
 }

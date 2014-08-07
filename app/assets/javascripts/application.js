@@ -16,3 +16,22 @@
 //= require turbolinks
 // require_tree .
 $(function(){ $(document).foundation(); });
+
+$(document).ready(function() {
+
+    checkLocation();
+
+});
+
+function checkLocation(){
+    var  geocoder = new google.maps.Geocoder();
+    var latlng = new google.maps.LatLng(p.coords.latitude, p.coords.longitude);
+
+    geocoder.geocode({'latLng': latlng}, function(results, status) {
+
+        if (status == google.maps.GeocoderStatus.OK) {
+
+        }
+    });
+
+};

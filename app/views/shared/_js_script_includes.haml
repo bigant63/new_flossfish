@@ -1,9 +1,13 @@
 <!--  javascript_include_tag t(:'jw_player_path') -->
 <!-- javascript_include_tag "application" -->
-= javascript_include_tag "modernizr", "jquery"
+= javascript_include_tag "modernizr", "jquery","init"
 = javascript_include_tag "bower_components/foundation/js/foundation.min.js"
-%script{:src =>"//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"}
-%script{:src =>"//ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js"}
+= javascript_include_tag "bower_components/foundation/js/foundation/foundation.dropdown.js"
+%script{:src =>"http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular.min.js"}
+%script{:src =>"http://maps.googleapis.com/maps/api/js?sensor=false"}
+
 
 
 = render :partial => 'shared/google-analytics' if ENV["RAILS_ENV"] == 'production'
+
+-#todo: add something to take params to additional files

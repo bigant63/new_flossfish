@@ -1,6 +1,18 @@
 1. finish ft page (rt side)
-2. scale and figure out how to use media quires for mobile
-3. randomize reviews
+2. scale and figure out how to use media quires for mobile √
+3. finish instructions page
 4. implement video player code (needs to be html 5, may need to upgrade)
+5. add nav for mobile menu (hamburger icon
+6. finish FAQ page
+7. add the apostrophes to the text √
+9. create a contact form with kaptcha
+
+==================== you can launch and add these later
+1. HAML the reviews section
+2. you need language translation for spanish, french, german  & portuguese
+3. randomize reviews
+4. add location and recommendation functionality
+5. add posterior & tips video for faq
 
 
+should you need any web services? - no

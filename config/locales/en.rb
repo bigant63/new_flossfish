@@ -4,7 +4,7 @@
         #
         :jw_player_path => 'jwplayer/5.10',
         :jw_player_skin_path => 'jwplayer/skins/%{skin_name}/%{skin_name}.xml',
-
+        :jw_player_key => '74992',
 
         ## Ruby and Rails standard items required for basic presentation of dates, times, numbers
         ## and currency.
@@ -15,7 +15,8 @@
             :more_info => 'More Information page - Welcome to flossfish.com',
             :contact_us => 'Contact us page - Welcome to flossfish.com',
             :reviews => 'Reviews page - Welcome to flossfish.com',
-            :videos => '>FlossFish video play list'
+            :videos => 'FlossFish video play list',
+            :contacts => 'Contacts setup page'
         },
 
         :meta => {
@@ -58,7 +59,7 @@
                            },
                            {
                                :title => 'FlossFish Hygienist Video Instructions',
-                               :description => "This is the YouTube video showing how the hygienists at Dr. Powell's office uses the flossFish to floss patients.",
+                               :description => 'This is the YouTube video showing how the hygienists at Dr. Powell&#39;s office uses the flossFish to floss patients.',
                                :tnail_path => '/images/video_tnails/clinical-tnail.png',
                                :still_path => '/images/video_tnails/clinical-still.png',
                                :video_path => '/videos/hygienists-video-yt',
@@ -99,7 +100,7 @@
                              ]},
                             {:label => 'Help',
                              :links => [{:label => 'Instructions', :link => 'https://store.flossfish.com/login.php'},
-                                        {:label => "FAQ's", :link => ''},
+                                        {:label => 'FAQ&#39;s', :link => ''},
                                         {:label => 'Contact Us', :link => ''}
                              ]},
                             {:label => 'Downloads',
@@ -122,7 +123,7 @@
         :homepage => {
             :introduction => '>Welcome to flossfish.com. My name is Franky Fish. Have braces? Hate to floss? The flossFish is the perfect flossing tool for braces',
             :what_is_flossfish => 'What is the FlossFish?',
-            :flossfish_is => 'The flossFish<sup>(TM)</sup> uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the <a href=#{instuctions_link}">instructions</a> page.',
+            :flossfish_is => 'The flossFish<sup>(TM)</sup> uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the <a href="%{link}">instructions</a> page.',
 
 
             :selection => 'The selected locale is automatically passed back to the application within the URL for each request, but <i>does not</i> require explicit setting of the locale within named routes, or session[]. Once setup, locale selection just works.',

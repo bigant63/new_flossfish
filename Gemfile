@@ -37,6 +37,8 @@ gem 'compass-rails'
 gem 'foundation-rails'
 gem 'modernizr-rails'
 gem 'jquery-rails'
+#gem 'font-awesome-sass'
+gem 'font-awesome-rails'
 #end
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks

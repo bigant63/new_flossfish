@@ -31,6 +31,8 @@ class StaticController < ApplicationController
     @page_name = static_reviews_path
   end
 
+
+
   def show
     #if you need a controller in show
     case params[:id]

@@ -1,61 +1,99 @@
 @import "modules/colors";
+@import "partials/base";
 @import "modules/mixins";
 @import "foundation_and_overrides";
+@import "compass/css3/box-shadow";
 
-/*
-todo: start scaling this for mobile
-*/
+@mixin changeNavMenu($toggle:false) {
+  .mobile-drop-down {
+    @if $toggle{
+      display: block;
+    }
+    @else{
+      display: none;
+    }
+
+    &:hover {
+      background: transparent;
+    }
+  }
+  nav {
+    @if $toggle{
+      display: none;
+    }
+    @else{
+      display: block;
+    }
+  }
+}
 
 header {
   background: transparent url('/images/header-bg.png') repeat-x 0 0;
   height: 141px;
-
   @include light_links;
 
-  /*  @media screen and (min-width: $site_width_desktop) {}*/
+  .mobile-drop-down {
+    float: right;
+    margin: 10px 10px 0 0;
+    font-size: $large_icon_size;
+    display: none;
+  }
+
   img#main-logo {
     float: left;
-    margin: 0 0 0 10px;
-
-    //large screen
-    @media only screen and (min-width: $small-screen) {
-      margin: 0 35px 0 40px;
-    }
-
+    width: auto;
+    max-width: 469px;
+    margin: 0 30px 0 40px;
   }
 
   nav {
     float: left;
-    margin: 10px 0 0 10px;
-
-    //large screen
-    @media only screen and (min-width: $smart-phone-screen - 15px) {
-      margin-top: 80px;
-    }
-
-    @media only screen and (max-width: $small-screen) {
-      margin-right: 20%;
-    }
-
+    margin-top: 85px;
 
     ul#main-nav.inline-list {
       li {
-        float: none;
-
-        @media only screen and (min-width: $small-screen) {
-          float: left;
+        a:hover {
+          color: $med_blue;
+          background: transparent;
         }
-
-          a:hover {
-            color: $med_blue;
-
-            @media only screen and (min-width: $smart-phone-screen - 15px)  {
-              color: $w;
-            }
-          }
-
       }
     }
+  }
+
+  ul.mobile-dropdown-list {
+    li {
+      a {
+        &:hover {
+          background: transparent;
+          color: $grey;
+        }
+      }
+    }
+  }
+
+
+  @media #{$smart-phone-range-only}  {
+    height: 85px;
+    @include box-shadow(#999 0 5px 10px);
+
+    img#main-logo {
+      width: 73%;
+      margin: 0 10px 15px 10px;
+    }
+  }
+
+
+  @media #{$small-up}  {
+    @include changeNavMenu(true);
+    margin-bottom: 15px;
+  }
+
+  /*end small*/
+
+  @media #{$header-medium-up} {
+    height: 141px;
+    @include box-shadow(none);
+    @include changeNavMenu(false);
   }
 
 }

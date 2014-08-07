@@ -1,6 +1,7 @@
 
 // Modules and Variables
 @import "modules/colors";
+
 @import "partials/base";
 //@import "partials/video_player";
 @import "partials/footer";
@@ -11,3 +12,10 @@
 @import "partials/buttons";
 //@import "partials/figures";
 //@import "partials/grids";
+@import "modules/all";
+
+@import "compass/css3/shared";
+@import "compass/css3/box-shadow";
+
+
+@import "foundation/components/type";

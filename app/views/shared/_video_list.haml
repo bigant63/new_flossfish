@@ -1,11 +1,13 @@
 #video-list-container
  %ul.video-list
   = list_of(t(:"media.play_list.items")) do |item|
-   %img{:src => item[:tnail_path], :alt => item[:description]}
+   %img{:src => item[:tnail_path], :alt => item[:description], :class => 'large-3 columns'}
     %div.video-info.large-9.columns
-     %a{:href => item[:link], :data=> {"still-path" => item[:still_path]} }=item[:title]
-     %span.video-details
+     %i.fa.icon-youtube.large-1.columns
+     %a{:href => item[:link], :class =>'large-11.columns', :data=> {"still-path" => item[:still_path]}}=item[:title].html_safe
+     %span.video-details.large-12.columns
       %ul.large-4.columns
-       %li=item[:author]
+       %li=item[:author].html_safe
        %li=t(:"labels.time") + ": " + item[:duration]
-      %p.large-8.columns=item[:description]
+      %p.large-8.columns=item[:description].html_safe
+/todo: you will need to convert this to take part of the list

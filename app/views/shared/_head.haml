@@ -5,7 +5,7 @@
     %meta{:name => 'description', :content => desc }
     %meta{:name =>'keywords', :content => t(:"meta.keywords") }
     /Set the viewport width to device width for mobile
-    %meta{:name =>'viewport', :content => 'width=device-width, initial-scale=1.0' }
+    %meta{:name =>'viewport', :content => 'width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no'}
     %title=title
     = stylesheet_link_tag 'application', 'foundation', 'main'
     = javascript_include_tag 'vendor/custom.modernizr'

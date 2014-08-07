@@ -23,13 +23,18 @@ NewFlossfish::Application.routes.draw do
     
   #todo see if you can link w/o the "/static" in front of your paths.
     root :to => 'static#index'
-    
+    resources :contacts
+
+
          get "static/index"
          get "static/order"
          get "static/contactus"
          get "static/instructions"
          get "static/moreinfo"
          get "static/reviews"
+         get "contacts/new"
+         get "contacts/index"
+
 
      
   # Example resource route with options:
