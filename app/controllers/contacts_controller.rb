@@ -10,12 +10,18 @@ class ContactsController < ApplicationController
       @header_object = {:title => t(:'titles.contacts'), :desc => t(:'meta.default')}
       @page_name = contacts_new_path
 
-      @contact = Contact.new(contact_params).push(Email.new(data: params[:contact][:email]))
-     
+      @contact = Contact.new(contact_params)
+
+      logger.debug "New post: #{@contact.addresses.first}"
+
+      logger.debug "New post again: #{params['contact']['address']}"
+
+=begin
     if @contact.save
     else
     end
-redirect_to new
+=end
+redirect_to static_contactus_path
       
       #if the @contact.save is fine
         #   redirect_to @contact
@@ -27,7 +33,7 @@ redirect_to new
 
     private
     def contact_params
-      params.require(:contact).permit(:nickname)
+      params.require(:contact).permit(:n, :address_attributes => [:line1, :line2, :city, :st], :phone_attributes => [:data,:label], :email_attributes => [:data,:label])
     end
 
   def show

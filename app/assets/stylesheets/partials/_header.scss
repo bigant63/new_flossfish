@@ -1,7 +1,7 @@
+@import "foundation_and_overrides";
 @import "modules/colors";
 @import "partials/base";
 @import "modules/mixins";
-@import "foundation_and_overrides";
 @import "compass/css3/box-shadow";
 
 @mixin changeNavMenu($toggle:false) {
@@ -13,9 +13,6 @@
       display: none;
     }
 
-    &:hover {
-      background: transparent;
-    }
   }
   nav {
     @if $toggle{
@@ -27,10 +24,15 @@
   }
 }
 
+div#video-container, #main-logo {
+  display: none;
+}
+
 header {
   background: transparent url('/images/header-bg.png') repeat-x 0 0;
   height: 141px;
   @include light_links;
+
 
   .mobile-drop-down {
     float: right;
@@ -50,10 +52,12 @@ header {
     float: left;
     margin-top: 85px;
 
+
     ul#main-nav.inline-list {
+      @include addFontSize($h4-font-size);
+
       li {
         a:hover {
-          color: $med_blue;
           background: transparent;
         }
       }
@@ -64,7 +68,7 @@ header {
     li {
       a {
         &:hover {
-          background: transparent;
+
           color: $grey;
         }
       }

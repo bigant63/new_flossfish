@@ -5,15 +5,18 @@ footer {
   display: inline-block;
   background-color: $grey;
   width: 100%;
+  margin-top: 15px;
 
   ul {
     float: left;
-    margin-right: 8%;
+    margin-right: 7%;
+    @include light_links;
     li {
       list-style: none;
-      color: #fff;
-
-      @include light_links;
+      &:first-child{
+        color: #fff;
+        @include addFontWeight(300);
+      }
     }
   }
 

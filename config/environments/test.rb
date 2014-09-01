@@ -33,4 +33,9 @@ NewFlossfish::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # Add the fonts path
+ # config.assets.paths << Rails.root.join('app', 'assets', 'fonts')
+  # Precompile additional assets
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 end

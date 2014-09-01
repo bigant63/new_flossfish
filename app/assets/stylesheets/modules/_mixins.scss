@@ -1,3 +1,5 @@
+@import "partials/base";
+
 @mixin light_links(){
   a{
     color:$light_blue;
@@ -12,4 +14,12 @@
       color:$light_blue;
     }
   }
+}
+
+@mixin addFontSize($size:0) {
+  font-size: $size+px;
+}
+
+@mixin addFontWeight($size:0) {
+  font-weight: $regular+$size;
 }

@@ -37,7 +37,7 @@ gem 'compass-rails'
 gem 'foundation-rails'
 gem 'modernizr-rails'
 gem 'jquery-rails'
-#gem 'font-awesome-sass'
+gem 'font-awesome-sass'
 gem 'font-awesome-rails'
 #end
 

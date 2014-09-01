@@ -1,0 +1,34 @@
+%section
+ %h1 Contacts Form
+ = form_for :contact, :url => {:controller => 'contacts', :class=>'large-12', :action => 'create'} do |f|
+  %ul
+   %li
+    = f.label :n, t(:"form_data.labels.name")
+    = f.text_field :n
+   = f.fields_for :address do |address_element|
+    %li
+     = address_element.label :line1, t(:"form_data.labels.address_one")
+     = address_element.text_field :line1
+    %li
+     = address_element.label :line2, t(:"form_data.labels.address_two")
+     = address_element.text_field :line2
+    %li
+     = address_element.label :city, t(:"form_data.labels.city")
+     = address_element.text_field :city
+    %li
+     = address_element.label :st, t(:"form_data.labels.country")
+     = address_element.select(:st, options_for_select(t(:"form_data.state_prov_values").map{|i| i.values.reverse}, :selected => t(:"form_data.state_prov_values").find{|i| i[:value]=="USAL"}[:value]))
+   = f.fields_for :phone do |phone_element|
+    %li
+     = phone_element.label :data, t(:"form_data.labels.biz_phone")
+     = phone_element.text_field :data
+     = phone_element.hidden_field :label, :value => 'biz'
+   = f.fields_for :email do |email_element|
+    %li
+     = email_element.label :data, t(:"form_data.labels.email")
+     = email_element.text_field :data
+     = email_element.hidden_field :label, :value => 'biz'
+  %p
+   = f.submit :class => 'button'
+
+   /todo have js get the locale and change the selected index

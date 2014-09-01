@@ -3,14 +3,25 @@
 
 // Font weights
 $light: 100;
-$regular: 400;
+$regular: 300;
+$semi-bold: 400;
 $bold: 600;
 
 // Base Font
-$base-font-family: sans-serif;
+$base-font-family: 'Open Sans','Helvetica Neue', Verdana, Arial, sans-serif;
 $base-font-weight: $regular;
 $base-font-size: 14px;
+$base-font-value: 12;
+$small-font-size:.8em;
 $base-line-height: 1.4;
+$h1-font-size: floor($base-font-value * 2.60);
+$h2-font-size:floor($base-font-value * 2.15);
+$h3-font-size:floor($base-font-value * 1.70);
+$h4-font-size:  $base-font-value + 4;
+$h5-font-size:  ceil($base-font-value * 0.90);
+$h6-font-size:  ceil($base-font-value * 0.85);
+$legal-font-size:  ceil($base-font-value *  0.71428571428);
+$section-head-font-size:  ceil($base-font-value * 1.25);
 
 // Fixed Font
 $fixed-font-family: monospace;
@@ -21,4 +32,8 @@ $fixed-line-height: $base-line-height;
 $header-font-weight: $bold;
 
 //icons
-$large_icon_size:$base-font-size + 10;
+$large_icon_size:$base-font-size + 8;
+
+//borders
+$border_radius:9px;
+

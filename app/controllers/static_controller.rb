@@ -55,6 +55,7 @@ class StaticController < ApplicationController
   end
 
   def create
+    @page_name = static_contactus_path
   end
 
   def edit

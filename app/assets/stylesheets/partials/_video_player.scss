@@ -1,15 +1,17 @@
 @import "modules/colors";
-@import "partials/typography";
+@import "modules/typography";
 @import "compass/utilities";
 @import "compass/css3";
+@import "modules/all";
+@import "modules/mixins";
 
 
 div#video-container{
 
   div#video-list-container{
-    border: .13em solid $med_blue;
+    border: .13em solid $border_color;
     border-top: none;
-    @include border-radius(9px);
+    @include border-radius($border_radius);
     @include border-top-left-radius(0);
     @include border-top-right-radius(0);
     padding: 10px 0;
@@ -39,41 +41,48 @@ div#video-container{
         }
 
         div.video-info{
+          span{
+            padding:0;
 
+            i{
+              padding:0;
+              font-size:$large_icon_size;
+              color:$med_grey;
+            }
 
-          a{
-            display: inline-block;
-            width: 100%;
-            font-weight: 500;
+            a{
+              display: inline-block;
+              @include addFontWeight(300);
+              padding:3px 0 0 0;
+            }
           }
 
-          span.video-details{
 
-            color: $dark_blue;
-            width: 100%;
-            display: inline-block;
-            margin-top: 10px;
+          .video-description{
+
+            margin-bottom: 0;
             padding: 0;
+            margin-top: 5px;
+          }
 
-            ul{
-              margin: 0;
-              padding: 0;
+        }/*end video info*/
 
-              li{
-                font-size: $small-font-size;
-                border: none;
-                display: list-item;
-                padding: 0;
-                margin: 0;
-              }
-            }
-            p{
-              font-size: $small-font-size;
-              margin-bottom: 0;
-              padding: 0;
-            }
+        .video-details{
+          margin-top: 3px;
+          padding: 0;
+
+          li{
+            font-size: $small-font-size;
+            border: none;
+            display: list-item;
+            padding: 0;
+            margin: 0;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
+
       }
     }
   }

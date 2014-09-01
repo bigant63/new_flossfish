@@ -1,13 +1,22 @@
 #video-list-container
  %ul.video-list
   = list_of(t(:"media.play_list.items")) do |item|
-   %img{:src => item[:tnail_path], :alt => item[:description], :class => 'large-3 columns'}
-    %div.video-info.large-9.columns
-     %i.fa.icon-youtube.large-1.columns
-     %a{:href => item[:link], :class =>'large-11.columns', :data=> {"still-path" => item[:still_path]}}=item[:title].html_safe
-     %span.video-details.large-12.columns
-      %ul.large-4.columns
-       %li=item[:author].html_safe
-       %li=t(:"labels.time") + ": " + item[:duration]
-      %p.large-8.columns=item[:description].html_safe
-/todo: you will need to convert this to take part of the list
+   %div.large-4.small-4.columns
+    %img{:src => item[:tnail_path], :alt => item[:description], :class => 'large-12 small-12 columns'}
+    %ul.video-details.large-12.small-12.columns
+     %li=item[:author].html_safe
+     %li=t(:"labels.time") + ": " + item[:duration]
+     -if item[:video_path_download].present?
+      %li
+       %a{:href => item[:video_path_download]}=t(:"labels.download").html_safe
+   %div.video-info.large-8.small-8.columns
+    %span.large-12.small-12.columns
+     %i.fa.fa-2.fa-youtube.large-1.medium-1.small-1.columns
+     %a{:href => item[:link], :class =>'large-11 medium-11 small-11 columns play link', :data=> {"still-path" => item[:still_path]}}=item[:title].html_safe
+    %p.video-description.large-12.small-12.columns=item[:description].html_safe
+
+
+-#
+  todo: you will need to convert this to take part of the list
+  we are not linking to youtube, you will need a js class to handle the link clicks
+  the  youtube link will open a new window to the src

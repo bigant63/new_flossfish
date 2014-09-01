@@ -27,5 +27,7 @@ NewFlossfish::Application.configure do
   # number of complex assets.
   config.assets.debug = true
   config.serve_static_assets = true
-
+  #config.assets.paths << Rails.root.join("app", "assets", "fonts")
+  # Precompile additional assets
+  config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/
 end

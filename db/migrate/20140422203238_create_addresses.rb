@@ -3,7 +3,6 @@ class CreateAddresses < ActiveRecord::Migration
     create_table :addresses do |t|
       t.string :contact_id
       t.string :label
-      t.string :label
       t.string :line1
       t.string :line2
       t.string :city
