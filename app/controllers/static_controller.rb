@@ -24,6 +24,10 @@ class StaticController < ApplicationController
   def contactus
     @header_object = {:title => t(:'titles.contact_us'), :desc => t(:'meta.default')}
     @page_name = static_contactus_path
+    @contact = Contact.new
+    1.times{@contact.addresses.build}
+    1.times{@contact.phones.build}
+    1.times{@contact.emails.build}
   end
 
   def reviews

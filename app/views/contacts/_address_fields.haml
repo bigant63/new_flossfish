@@ -1,0 +1,15 @@
+%li
+ = f.label :line1, t(:"form_data.labels.address_one")
+ = f.text_field :line1
+%li
+ = f.label :line2, t(:"form_data.labels.address_two")
+ = f.text_field :line2
+%li
+ = f.label :city, t(:"form_data.labels.city")
+ = f.text_field :city
+%li
+ = f.label :st, t(:"form_data.labels.country")
+ = f.select(:st, options_for_select(t(:"form_data.state_prov_values").map{|i| i.values.reverse}, :selected => t(:"form_data.state_prov_values").find{|i| i[:value]=="USAL"}[:value]))
+%li
+ = f.label :zip, t(:"form_data.labels.zip")
+ = f.text_field :zip

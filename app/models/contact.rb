@@ -1,19 +1,19 @@
 class Contact < ActiveRecord::Base
-has_many:emails
-has_many:phones
-has_many:photos
-has_many:addresses, inverse_of :contact
-has_many:tags
-has_many:caluris
-has_many:urls
-has_many:impps
-has_many:pdates
-has_many:geos
-has_many:requests
-has_many:interests
-has_many:impps
-has_many:categories
-has_many:contactAttrs
+has_many:emails, :dependent => :destroy
+has_many:phones, :dependent => :destroy
+has_many:photos, :dependent => :destroy
+has_many:addresses, :dependent => :destroy
+has_many:tags, :dependent => :destroy
+has_many:caluris, :dependent => :destroy
+has_many:urls, :dependent => :destroy
+has_many:impps, :dependent => :destroy
+has_many:pdates, :dependent => :destroy
+has_many:geos, :dependent => :destroy
+has_many:requests, :dependent => :destroy
+has_many:interests, :dependent => :destroy
+has_many:impps, :dependent => :destroy
+has_many:categories, :dependent => :destroy
+has_many:contactAttrs, :dependent => :destroy
 
 
 =begin

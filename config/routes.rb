@@ -25,7 +25,9 @@ NewFlossfish::Application.routes.draw do
     
   #todo see if you can link w/o the "/static" in front of your paths.
     root :to => 'static#index'
-    resources :contacts
+    resources :contacts do
+      resources :addresses, :phones, :emails
+    end
 
 
          get "static/index"
@@ -36,6 +38,10 @@ NewFlossfish::Application.routes.draw do
          get "static/reviews"
          get "contacts/new"
          get "contacts/index"
+
+     resources :articles do
+       resources :comments
+     end
 
 
      

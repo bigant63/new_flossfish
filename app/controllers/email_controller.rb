@@ -1,4 +1,11 @@
 class EmailController < ActionController::Base
+  def new
+    @email = Email.new
+    @contact = @email.build_contact
+
+    #@contact.addresses.push(@address)
+  end
+
   def create
     Email.create(email_params)
   end

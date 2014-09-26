@@ -1,0 +1,7 @@
+%li
+= f.label :data, data_label
+- if data_label==t(:"form_data.labels.biz_phone")
+ = f.phone_field :data
+- else
+ = f.email_field :data
+= f.hidden_field :label, :value => 'biz'

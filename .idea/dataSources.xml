@@ -10,7 +10,7 @@
           <url>file://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/xerial-sqlite-license.txt</url>
         </library>
         <library>
-          <url>jar://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar!/</url>
+          <url>file://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
         </library>
       </libraries>
     </data-source>
