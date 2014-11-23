@@ -30,19 +30,18 @@ NewFlossfish::Application.routes.draw do
     end
 
 
-         get "static/index"
-         get "static/order"
-         get "static/contactus"
-         get "static/instructions"
-         get "static/moreinfo"
-         get "static/reviews"
-         get "contacts/new"
-         get "contacts/index"
+     get "static/index"
+     get "static/order" => redirect("http://store.flossfish.com"), :as => :order
+     get "static/contactus"
+     get "static/instructions"
+     get "static/moreinfo"
+     get "static/reviews"
+     get "contacts/new"
+     get "contacts/index"
 
      resources :articles do
        resources :comments
      end
-
 
      
   # Example resource route with options:

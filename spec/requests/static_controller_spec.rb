@@ -1,26 +1,26 @@
 #test out static content
-include Rails.application.routes.url_helpers
+require 'spec_helper'
+require 'helpers'
 
-describe 'static/page content' do
-  context 'when the product has a url under static' do
-    it 'test the home page' do
-      get static_index_path
+describe StaticController, :type => :controller do
 
-      response.should render_template(index)
+ @pages = [{:page_name => 'index', :path => Rails.application.routes.url_helpers.root_path, :title_content=> I18n.t(:"titles.home")},
+           {:page_name => I18n.t(:"navigation.main_nav.instructions"), :path => Rails.application.routes.url_helpers.static_instructions_path, :title_content=> I18n.t(:"titles.instructions")},
+           {:page_name => I18n.t(:"navigation.main_nav.order"), :path => Rails.application.routes.url_helpers.static_order_path, :title_content=> I18n.t(:"titles.order")},
+           {:page_name => I18n.t(:"navigation.main_nav.more_info"), :path => Rails.application.routes.url_helpers.static_moreinfo_path, :title_content=> I18n.t(:"titles.more_info")},
+           {:page_name => I18n.t(:"navigation.main_nav.contact_us"), :path => Rails.application.routes.url_helpers.static_contactus_path, :title_content=> I18n.t(:"titles.contact_us")},
 
-      #check page title
-      expect(rendered).to have_link t(:"titles.home"), href: 'http://example.com'
+ ]
+ @pages.map{|page|
+   context 'testing the #{page[:page_name]} page' do
+     it 'should check the home page' do
+       check_content(page[:path],page[:page_name], page[:title_content])
+     end
 
-      check_main_links()
-    end
-  end
-
-  def check_main_links
-    #check links
-    expect(rendered).to have_link t(:"navigation.main_nav.instructions"), href: static_instructions_path
-    expect(rendered).to have_link t(:"navigation.main_nav.order"), href: static_order_path
-    expect(rendered).to have_link t(:"navigation.main_nav.more_info"), href: static_moreinfo_path
-    expect(rendered).to have_link t(:"navigation.main_nav.contact_us"), href: static_contactus_path
-  end
+     it 'should have all navigation' do
+       check_main_links(page[:path])
+     end
+   end
+ }
 
 end

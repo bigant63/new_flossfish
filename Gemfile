@@ -9,12 +9,17 @@ gem 'haml'
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3', '1.3.8'
-  gem 'rspec-rails', '2.13.1'
+  gem 'guard-spork'
 end
 
 group :test do
   #gem 'selenium-webdriver', '2.35.1'
+  gem 'rspec-rails', '2.14.0.rc1'
   gem 'capybara', '2.1.0'
+  gem 'shoulda-matchers'
+  gem 'factory_girl_rails'
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 gem 'heroku'
