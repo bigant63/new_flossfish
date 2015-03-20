@@ -2,20 +2,21 @@ source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.5'
+gem 'rails'
 gem 'haml'
 
 
 # Use sqlite3 as the database for Active Record
 group :development do
-  gem 'sqlite3', '1.3.8'
+  gem 'sqlite3'
   gem 'guard-spork'
+  gem 'capistrano-rails'
 end
 
 group :test do
   #gem 'selenium-webdriver', '2.35.1'
   gem 'rspec-rails', '2.14.0.rc1'
-  gem 'capybara', '2.1.0'
+  gem 'capybara', '2.4.4'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
   gem 'cucumber-rails', require: false
@@ -34,10 +35,10 @@ gem 'heroku'
 
 # Use angular as the JavaScript library
 #group :assets do
-gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
+gem 'uglifier'
+gem 'coffee-rails'
 gem 'angularjs-rails'
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 gem 'compass-rails'
 gem 'foundation-rails'
 gem 'modernizr-rails'
@@ -51,7 +52,7 @@ gem 'font-awesome-rails'
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+gem 'jbuilder'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
