@@ -2,10 +2,11 @@ require 'bundler/capistrano'
 
 set :application, "flossfish"
 set :repository,  "git@github.com:github.com/bigant63/new_flossfish.git"
-set :deploy_to, "/var/www/flossfish.com"
+set :deploy_to, "public_html/"
 set :scm, :git
 set :branch, "master"
-set :user, "flossfis"
+set :default_stage, "production"
+set :user, "deployment"
 set :scm_passphrase, "rhlg7cHlqWWqV"
 set :group, "deployers"
 set :use_sudo, false
@@ -45,3 +46,5 @@ end
 after "deploy", "deploy:symlink_config_files"
 after "deploy", "deploy:restart"
 after "deploy", "deploy:cleanup"
+
+Rake::Task[:production].invoke

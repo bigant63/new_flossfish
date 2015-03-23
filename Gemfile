@@ -11,6 +11,7 @@ group :development do
   gem 'sqlite3'
   gem 'guard-spork'
   gem 'capistrano-rails'
+  gem 'capistrano-rbenv'
 end
 
 group :test do
