@@ -1,3 +1,6 @@
+set :stage, :production
+set :branch, "master"
+
 # server-based syntax
 # ======================
 # Defines a single server with a list of roles and multiple properties.
@@ -6,8 +9,13 @@
 # server 'example.com', user: 'deploy', roles: %w{app db web}, my_property: :my_value
 # server 'example.com', user: 'deploy', roles: %w{app web}, other_property: :other_value
 # server 'db.example.com', user: 'deploy', roles: %w{db}
+set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-
+server '50.23.201.238', user: 'flossfis', password:'rhlg7cHlqWWqV', roles: %w{web app db}, primary: true
+set :deploy_to, "public_html/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
+set :rails_env, :production
+set :unicorn_worker_count, 5
+set :enable_ssl, false
 
 # role-based syntax
 # ==================
