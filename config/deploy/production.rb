@@ -11,8 +11,8 @@ set :branch, "master"
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 set :full_app_name, "#{fetch(:application)}_#{fetch(:stage)}"
 
-server '50.23.201.238', user: 'flossfis', password:'rhlg7cHlqWWqV', roles: %w{web app db}, primary: true
-set :deploy_to, "public_html/#{fetch(:deploy_user)}/apps/#{fetch(:full_app_name)}"
+server '50.23.201.238', user: 'flossfis', password:'rhlg7cHlqWWqV', roles: %w{app db}, primary: true
+set :deploy_to, "$HOME/public_html/apps/#{fetch(:full_app_name)}"
 set :rails_env, :production
 set :unicorn_worker_count, 5
 set :enable_ssl, false
