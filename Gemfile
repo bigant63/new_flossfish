@@ -22,7 +22,7 @@ group :test do
   gem 'capybara', '2.4.4'
   gem 'shoulda-matchers'
   gem 'factory_girl_rails'
-  gem 'cucumber-rails', require: false
+  gem 'cucumber-rails',  :require => false
   gem 'database_cleaner'
 end
 
@@ -59,7 +59,7 @@ gem 'jbuilder'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', :require => false
 end
 
 group :production do
