@@ -2,8 +2,9 @@
 
 
 set :application, "flossfish"
-set :repo_url,  "git@github.com:github.com:bigant63/new_flossfish.git"
+set :repo_url, "https://github.com/bigant63/new_flossfish.git"
 set :scm, :git
+
 #set :branch, "master"
 #set :default_stage, "production"
 
@@ -13,10 +14,11 @@ set :rbenv_ruby, '2.1.1'
 set :rbenv_prefix, "RBENV_ROOT=#{fetch(:rbenv_path)} RBENV_VERSION=#{fetch(:rbenv_ruby)} #{fetch(:rbenv_path)}/bin/rbenv exec"
 set :rbenv_map_bins, %w{rake gem bundle ruby rails}
 set :assets_roles, [:app]
-set :tmp_dir, "HOME/tmp"
+set :tmp_dir, "home/tmp"
+
 
 set :default_environment, {
-  'PATH' => "HOME/ruby/gems/bin:/usr/local/ruby20/bin:$PATH",
+  'PATH' => "home/ruby/gems/bin:/usr/local/ruby20/bin:$PATH",
   'RUBY_VERSION' => 'ruby 2.0.0',
   'GEM_HOME'     => '/usr/local/ruby20/lib64/ruby/gems/',
   'GEM_PATH'     => '$HOME/ruby/gems:/usr/local/ruby20/lib64/ruby/gems/:$GEM_PATH'
