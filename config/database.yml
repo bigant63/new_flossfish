@@ -29,6 +29,6 @@ production:
   timeout: 5000
   encoding: utf8
   username: root
-  password: secure
+  password:
   socket: /var/run/mysqld/mysqld.sock
   reconnect: true
