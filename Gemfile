@@ -5,6 +5,7 @@ source 'https://rubygems.org'
 gem 'rails'
 gem 'haml'
 gem 'mysql2'
+gem 'rake'
 #gem 'rails', '4.2.0'
 
 

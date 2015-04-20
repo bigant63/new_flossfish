@@ -108,3 +108,13 @@ namespace :deploy do
   # automatically.
   after 'deploy:publishing', 'deploy:restart'
 end
+
+
+after "deploy:create_symlink", "MYAPPNAME:htaccess_setup"
+
+namespace :MYAPPNAME do
+  task :htaccess_setup, :roles => :app do
+    htaccess = "PATHTOMYPUBLICDIR/.htaccess"
+    run "if [ ! -f #{htaccess} ]; then echo 'PassengerEnabled On' > #{htaccess}; echo 'PassengerAppRoot #{current_path}' >> #{htaccess}; echo '.htaccess created'; else echo '.htaccess already exists (untouched)'; fi"
+  end
+end

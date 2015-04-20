@@ -1,28 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component name="dataSourceStorage">
-  <data-source source="LOCAL" name="Rails new_flossfish: development" product="" version="" jdbc-version="" driver-name="" driver-version="" uuid="21c805db-104d-4ccb-b43a-2f11c4bff3fc">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/development.sqlite3</jdbc-url>
-    <libraries>
-      <library>
-        <url>file://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/xerial-sqlite-license.txt</url>
-      </library>
-      <library>
-        <url>jar://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar!/</url>
-      </library>
-    </libraries>
+  <data-source name="Rails new_flossfish: development" uuid="21c805db-104d-4ccb-b43a-2f11c4bff3fc">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
-  <data-source source="LOCAL" name="Rails new_flossfish: test" product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="4d5fecbe-0127-4242-afa3-a7f3fec4debb">
-    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
-    <libraries>
-      <library>
-        <url>file://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/xerial-sqlite-license.txt</url>
-      </library>
-      <library>
-        <url>file://$USER_HOME$/Library/Preferences/IntelliJIdea12/jdbc-drivers/sqlite-jdbc-3.7.6.3-20110609.081603-3.jar</url>
-      </library>
-    </libraries>
+  <data-source name="Rails new_flossfish: test" uuid="4d5fecbe-0127-4242-afa3-a7f3fec4debb">
+    <database-info product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native"/>
     <schema name="" catalog=""/>
+  </data-source>
+  <data-source name="Rails new_flossfish: production" uuid="517e6c30-7814-4738-b24e-2a24df4a0a23">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
   </data-source>
 </component>
