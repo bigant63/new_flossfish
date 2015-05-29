@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ce1a2ec7-c30b-4fff-8e6e-d5c9b11cf0b2" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/deploy.rb" afterPath="$PROJECT_DIR$/config/deploy.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="new_flossfish.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -76,8 +74,8 @@
       <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39770555">
-              <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+            <state vertical-scroll-proportion="2.0076482">
+              <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -1383,12 +1381,12 @@
       <workItem from="1429246755111" duration="12210000" />
       <workItem from="1429505892085" duration="5911000" />
       <workItem from="1431233956787" duration="144000" />
-      <workItem from="1432867380699" duration="4863000" />
+      <workItem from="1432867380699" duration="5054000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="474808000" />
+    <option name="totallyTimeSpent" value="474999000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="16" y="46" width="1236" height="761" extended-state="0" />
@@ -1688,10 +1686,10 @@
         <state vertical-scroll-proportion="0.50877196">
           <caret line="13" column="67" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
           <folding>
-            <element signature="e#214#252#0" expanded="true" />
-            <element signature="e#318#349#0" expanded="true" />
-            <element signature="e#408#443#0" expanded="true" />
-            <element signature="e#505#541#0" expanded="true" />
+            <element signature="e#214#252#0" expanded="false" />
+            <element signature="e#318#349#0" expanded="false" />
+            <element signature="e#408#443#0" expanded="false" />
+            <element signature="e#505#541#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1847,8 +1845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39770555">
-          <caret line="70" column="2" selection-start-line="70" selection-start-column="2" selection-end-line="70" selection-end-column="2" />
+        <state vertical-scroll-proportion="2.0076482">
+          <caret line="70" column="6" selection-start-line="70" selection-start-column="6" selection-end-line="70" selection-end-column="6" />
           <folding />
         </state>
       </provider>
