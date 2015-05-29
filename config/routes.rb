@@ -17,33 +17,35 @@ NewFlossfish::Application.routes.draw do
   # Example resource route (maps HTTP verbs to controller actions automatically):
   #   resources :products
 
-    #for video list
-    get "video/playlist"
-  
-    #for locale
-    #get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
-    
+  #for video list
+  get "video/playlist"
+
+  #for locale
+  #get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
+
   #todo see if you can link w/o the "/static" in front of your paths.
-    root :to => 'static#index'
-    resources :contacts do
-      resources :addresses, :phones, :emails
-    end
+  root :to => 'static#index'
+  resources :contacts do
+    resources :addresses, :phones, :emails
+  end
 
 
-     get "static/index"
-     get "static/order" => redirect("http://store.flossfish.com"), :as => :order
-     get "static/contactus"
-     get "static/instructions"
-     get "static/moreinfo"
-     get "static/reviews"
-     get "contacts/new"
-     get "contacts/index"
+  #get "home"
 
-     resources :articles do
-       resources :comments
-     end
+  get 'order' => redirect('http://store.flossfish.com'), :as => :order
+  get 'contactus', to: 'static#contactus'
+  get 'instructions', to: 'static#instructions'
+  get 'moreinfo', to: 'static#moreinfo'
+  get 'reviews', to: 'static#reviews'
+  get 'contacts/new'
+  get 'contacts/index'
 
-     
+
+  resources :articles do
+    resources :comments
+  end
+
+
   # Example resource route with options:
   #   resources :products do
   #     member do
@@ -84,5 +86,5 @@ NewFlossfish::Application.routes.draw do
   #     resources :products
   #   end
 
-   get ':action' => 'static#:action'
+  get ':action' => 'static#:action'
 end

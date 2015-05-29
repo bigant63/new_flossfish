@@ -7,10 +7,10 @@ def check_main_links(path)
 
     it 'should return check the main links' do
       get path
-      response.body.should have_link t(:"navigation.main_nav.instructions"), :href => static_instructions_path
-      response.body.should have_link t(:"navigation.main_nav.order"), :href => static_order_path
-      response.body.should have_link t(:"navigation.main_nav.more_info"), :href => static_moreinfo_path
-      response.body.should have_link t(:"navigation.main_nav.contact_us"), :href => static_contactus_path
+      response.body.should have_link t(:"navigation.main_nav.instructions"), :href => instructions_path
+      response.body.should have_link t(:"navigation.main_nav.order"), :href => order_path
+      response.body.should have_link t(:"navigation.main_nav.more_info"), :href => moreinfo_path
+      response.body.should have_link t(:"navigation.main_nav.contact_us"), :href => contactus_path
     end
   end
 end

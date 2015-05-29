@@ -4,7 +4,7 @@ class AddressesController < ActionController::Base
     @contact = Contact.find(param[:cuid])
     @address = @contact.addresses.create(address_params)
     #Address.create(address_params)
-    redirect_to static_contactus_path(@contact)
+    redirect_to contactus_path(@contact)
   end
 
   def new

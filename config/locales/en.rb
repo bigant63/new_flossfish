@@ -2,7 +2,7 @@
     'en' => {
 
         #
-        :jw_player_path => '/jwplayer/5.10',
+        :jw_player_path => 'jwplayer/5.10',
         :jw_player_skin_path => '/jwplayer/skins/%{skin_name}/%{skin_name}.xml',
         :jw_player_key => '74992',
 

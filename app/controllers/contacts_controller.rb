@@ -28,7 +28,7 @@ class ContactsController < ApplicationController
     else
     end
 =end
-    redirect_to static_contactus_path
+    redirect_to contactus_path
 
     #if the @contact.save is fine
     #   redirect_to @contact
