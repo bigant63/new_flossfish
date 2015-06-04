@@ -4,7 +4,7 @@
 /[if IE 8 ]    <html class="ie8" lang="en">
 /[if IE 9 ]    <html class="ie9" lang="en">
 /[if (gt IE 9)|!(IE)] <! <html lang="en">
-= render :partial => 'shared/head', :locals => @header_object? @header_object : {:title => t(:'titles.home'), :desc => t(:'meta.default')} 
+= render :partial => 'shared/head', :locals => @header_object? @header_object : {:title => t(:'titles.home'), :desc => t(:'meta.default')}
 %body
  = render :partial => 'shared/header'
  = yield

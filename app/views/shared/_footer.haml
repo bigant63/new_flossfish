@@ -4,4 +4,4 @@
     - t(:"navigation.footer_nav").each do |item|
       = render :partial => 'shared/footer_list', :locals => {:var => item}
   %div.copyright-info
-    %p © Copyright no one at all. Go to town
+    %p #{t(:"footer", :yr => Time.now.year.to_s)}

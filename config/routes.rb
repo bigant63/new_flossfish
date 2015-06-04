@@ -32,7 +32,8 @@ NewFlossfish::Application.routes.draw do
 
   #get "home"
 
-  get 'order' => redirect('http://store.flossfish.com'), :as => :order
+  #get 'order' => redirect('http://store.flossfish.com'), :as => :order
+  get 'order' => redirect('http://store-7h96btiy.mybigcommerce.com/'), :as => :order
   get 'contactus', to: 'static#contactus'
   get 'instructions', to: 'static#instructions'
   get 'moreinfo', to: 'static#moreinfo'
@@ -40,10 +41,6 @@ NewFlossfish::Application.routes.draw do
   get 'contacts/new'
   get 'contacts/index'
 
-
-  resources :articles do
-    resources :comments
-  end
 
 
   # Example resource route with options:

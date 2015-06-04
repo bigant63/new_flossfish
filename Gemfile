@@ -9,6 +9,14 @@ gem 'rake'
 #gem 'rails', '4.2.0'
 
 
+source 'https://rails-assets.org' do
+ gem 'rails-assets-foundation'
+ gem 'rails-assets-foundation-ra'
+ gem 'rails-assets-foundation-apps'
+ gem 'rails-assets-foundation5-sass'
+gem 'rails-assets-bower-foundation'
+end
+
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
@@ -67,8 +75,8 @@ group :doc do
 end
 
 group :production do
-  #gem 'pg', '0.15.1'
-  gem 'execjs'
+  gem 'bundler'
+  gem 'unicorn'
   gem 'mysql2'
   gem 'rails_12factor', '0.0.2'
 end

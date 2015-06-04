@@ -1,6 +1,7 @@
 {
 "name": "PROJECT_NAME",
 "dependencies": {
-"foundation": "~5.0.2"
-}
+"foundation": "~5.5.2"
+  },
+"directory": "bower_components/foundation/**.**"
 }

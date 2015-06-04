@@ -438,31 +438,40 @@
                 :contact_us => 'Contact us'
             },
             :footer_nav => [{:label => 'Order',
-                             :links => [{:label => 'Login', :link => 'https://store.flossfish.com/login.php'},
-                                        {:label => 'Product Catalog', :link => 'http://store.flossfish.com/all-flossfish/'},
+                             :links => [{:label => 'Login', :link => 'http://store-7h96btiy.mybigcommerce.com/login.php'},
+                                        {:label => 'Product Catalog', :link => 'http://store-7h96btiy.mybigcommerce.com/all-flossfish/'}
+=begin
                                         {:label => 'Order Form', :link => '/orderform'}
+=end
                              ]},
                             {:label => 'Help',
-                             :links => [{:label => 'Instructions', :link => 'https://store.flossfish.com/login.php'},
+                             :links => [{:label => 'Instructions', :link => '/instructions'},
+=begin
                                         {:label => 'FAQ&#39;s', :link => ''},
-                                        {:label => 'Contact Us', :link => ''}
+=end
+                                        {:label => 'Contact Us', :link => '/contactus'}
                              ]},
                             {:label => 'Downloads',
-                             :links => [{:label => 'High Bandwidth Instructions', :link => ''},
-                                        {:label => 'Low Bandwidth Instructions', :link => ''},
-                                        {:label => 'Contact Us', :link => ''}
-                             ]},
+                             :links => [{:label => 'High Bandwidth Instructions', :link => '/videos/trial-instructions.mp4'},
+                                        {:label => 'Low Bandwidth Instructions', :link => '/videos/trial-instructions.webm'}
+=begin
+                                        {:label => 'Contact Us', :link => '/contactus'}
+brochures, written instructions
+=end
+                             ]}
+=begin
                             {:label => 'More',
                              :links => [{:label => 'Link Love', :link => ''},
                                         {:label => 'Distributor Info', :link => ''},
                                         {:label => 'Our Calendar', :link => ''},
                                         {:label => 'Reviews', :link => ''}
                              ]}
-            ]
-
+=end
+            ],
         },
 
         ## Website content.
+        :footer => 'Copyright %{yr} Hilltop Corporation. All rights reserved.',
 
         :homepage => {
             :introduction => ' Welcome to flossfish.com. My name is Franky Fish. Have braces? Hate to floss? The flossFish is the perfect flossing tool for braces',
