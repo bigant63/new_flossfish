@@ -17,6 +17,9 @@ source 'https://rails-assets.org' do
 gem 'rails-assets-bower-foundation'
 end
 
+gem 'recaptcha'
+gem 'bcrypt-ruby'
+
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
@@ -37,7 +40,7 @@ group :test do
   gem 'database_cleaner'
 end
 
-gem 'heroku'
+#gem 'heroku'
 #gem 'activeadmin',  github: 'gregbell/active_admin', branch: 'rails4'
 
 

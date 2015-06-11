@@ -9,8 +9,8 @@
     </data-source>
     <data-source name="Rails new_flossfish: production" uuid="517e6c30-7814-4738-b24e-2a24df4a0a23">
       <first-sync>true</first-sync>
-      <user-name>flossfis_db</user-name>
-      <user-password>dffbdfe2dfccdfe9dffadfd3dff8dff3dff2dfc4dfdadfe4dfebdfd0dff3dfc8</user-password>
+      <user-name>rails</user-name>
+      <user-password>dfe1dff9dfc5dff8dffbdfc4df98dfe7df9ddfe2</user-password>
     </data-source>
   </component>
 </project>

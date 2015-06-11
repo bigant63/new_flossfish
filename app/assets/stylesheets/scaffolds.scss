@@ -8,6 +8,10 @@ body {
   line-height: 18px;
 }
 
+#main-content{
+  min-height: 20rem;
+}
+
 p, ol, ul, td {
   font-family: $base-font-family;
   font-size: 14px;

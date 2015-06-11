@@ -23,7 +23,7 @@ NewFlossfish::Application.routes.draw do
   #for locale
   #get ":locale" => "static#index", :via => [ :get ], :as => "root_with_locale"
 
-  #todo see if you can link w/o the "/static" in front of your paths.
+
   root :to => 'static#index'
   resources :contacts do
     resources :addresses, :phones, :emails
@@ -32,8 +32,7 @@ NewFlossfish::Application.routes.draw do
 
   #get "home"
 
-  #get 'order' => redirect('http://store.flossfish.com'), :as => :order
-  get 'order' => redirect('http://store-7h96btiy.mybigcommerce.com/'), :as => :order
+  get 'order' => redirect('http://store.flossfish.com'), :as => :order
   get 'contactus', to: 'static#contactus'
   get 'instructions', to: 'static#instructions'
   get 'moreinfo', to: 'static#moreinfo'

@@ -1,0 +1,19 @@
+%section.contact-page
+  %h5
+    =t(:"contact_us.labels.address")
+  %P
+    =t(:"contact_us.address.name")
+    %br
+    =t(:"contact_us.address.line1")
+    %br
+    =t(:"contact_us.address.citySt")
+  %p
+    %span.large-1.medium-1.small-1.columns
+      =t(:"contact_us.labels.fax")
+    %span.large-11.medium-11.small-11.columns
+      =t(:"contact_us.fax_number")
+    %span.large-1.medium-1.small-1.columns
+      =t(:"contact_us.labels.email")
+    %span.large-11.medium-11.small-11.columns
+      %a{:href => "mailto:"+t(:"contact_us.email")}
+        =t(:"contact_us.email")

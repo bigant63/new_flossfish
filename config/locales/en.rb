@@ -88,7 +88,7 @@
                            }]
             }
         },
-        
+
         :form_data => {
             :labels =>{
              :address_one => 'Address line 1',
@@ -427,7 +427,7 @@
     {:value => 'ZM', :label => 'Zambia'},
     {:value => 'ZW', :label => 'Zimbabwe'}
     ]
-            
+
          },
 
         :navigation => {
@@ -503,6 +503,21 @@ brochures, written instructions
                 }
             ]
         },
+        :contact_us =>{
+            :header => 'FlossFish.com Contact us page',
+            :email => 'info@flossfish.com',
+            :fax_number =>'678.867.2008',
+            :address =>{
+              :name =>'Flossfish.com',
+              :line1 =>'PO Box 964',
+              :citySt =>'Alpharetta GA, 30009',
+            },
+            :labels =>{
+                :fax => 'Fax:',
+                :email => 'Email:',
+                :address => 'Address:',
+            }
+        },
 
         #otther content goes here
         :edit => {
@@ -552,7 +567,10 @@ brochures, written instructions
 
     :labels =>{
         :time => 'Time',
+        :address => 'Address:',
         :download => 'Download',
+        :rt_click_download => 'Right click to Download',
+        :sec => 'Seconds'
         }
 
     }
