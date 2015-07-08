@@ -1,3 +1,4 @@
 %div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
   %div.small-12.medium-8.large-8.columns
-    =render :partial => 'shared/contact_content'
+    %h3.error= flash[:notice]
+    =render :partial => 'shared/contact_form'

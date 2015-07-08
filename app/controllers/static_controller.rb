@@ -28,7 +28,10 @@ class StaticController < ApplicationController
     1.times{@contact.addresses.build}
     1.times{@contact.phones.build}
     1.times{@contact.emails.build}
+    #flash.keep(:notice)
   end
+
+
 
   def reviews
     @header_object = {:title => t(:'titles.reviews'), :desc => t(:'meta.default')}

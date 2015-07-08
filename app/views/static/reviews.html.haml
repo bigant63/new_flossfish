@@ -1,0 +1,12 @@
+%div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
+  %div.small-12.medium-8.large-8.columns
+    %h4=t(:"reviews_header").html_safe
+    %ul.review-list
+      = list_of(t(:"reviews")) do |item|
+        %span=item[:date]
+        %span.review-stars-container.large-12.small-12.columns
+          - item[:stars].to_i.times do
+            %i.fi-star
+        %p=item[:review].html_safe
+        -if item[:response].present?
+          %em=item[:response].html_safe

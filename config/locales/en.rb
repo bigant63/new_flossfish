@@ -31,7 +31,22 @@
             :description => 'Videos relating to the flossFish, dental hygiene and flossing with braces.',
 
             :play_list => {
-                :items => [{
+                :items => [   {
+                                  :title => 'FlossFish Instructions Video',
+                                  :description => 'This is the live video showing how the flossFish works. The video shows the clinical trials video of the flossFish.',
+                                  :tnail_path => '/images/video_tnails/video_trial-tnail.png',
+                                  :still_path => '/images/video_tnails/video_trial-still.png',
+                                  :video_path => '/videos/trial-instructions.webm',
+                                  :video_path_download => '/videos/trial-instructions.webm',
+                                  :duration => '25',
+                                  :provider => 'youtube',
+                                  :author => 'Hilltop Corporation',
+                                  :date => '5/08/2011',
+                                  :tags => 'FlossFish, flossing with braces, animated video, orthodontics, how to floss with braces, dental hygiene',
+                                  :link => 'http://www.youtube.com/watch?v=ZiKPD_Z-zHw'
+                              },
+
+                    {
                                :title => 'FlossFish Animated Instructions Video',
                                :description => 'This is a 3D animated video showing how the flossFish works. The video shows flossing with braces using the flossFish tool and shoots camera angels from in front and behind the teeth.',
                                :tnail_path => '/images/video_tnails/animated-tnail.png',
@@ -45,20 +60,7 @@
                                :tags => 'FlossFish, flossing with braces, animated video, orthodontics, how to floss with braces, dental hygienist, dental hygiene',
                                :link => 'http://www.youtube.com/watch?v=cpihI8fQlxY'
                            },
-                           {
-                               :title => 'FlossFish Instructions Video',
-                               :description => 'This is the live video showing how the flossFish works. The video shows the clinical trials video of the flossFish.',
-                               :tnail_path => '/images/video_tnails/video_trial-tnail.png',
-                               :still_path => '/images/video_tnails/video_trial-still.png',
-                               :video_path => '/videos/trial-instructions.webm',
-                               :video_path_download => '/videos/trial-instructions.webm',
-                               :duration => '25',
-                               :provider => 'youtube',
-                               :author => 'Hilltop Corporation',
-                               :date => '5/08/2011',
-                               :tags => 'FlossFish, flossing with braces, animated video, orthodontics, how to floss with braces, dental hygiene',
-                               :link => 'http://www.youtube.com/watch?v=ZiKPD_Z-zHw'
-                           },
+
                            {
                                :title => 'FlossFish Hygienist Video Instructions',
                                :description => 'This is the YouTube video showing how the hygienists at Dr. Powell&#39;s office uses the flossFish to floss patients.',
@@ -458,15 +460,17 @@
                                         {:label => 'Contact Us', :link => '/contactus'}
 brochures, written instructions
 =end
-                             ]}
-=begin
+                             ]},
+
                             {:label => 'More',
-                             :links => [{:label => 'Link Love', :link => ''},
+=begin
+                                        {:label => 'Link Love', :link => ''},
                                         {:label => 'Distributor Info', :link => ''},
                                         {:label => 'Our Calendar', :link => ''},
-                                        {:label => 'Reviews', :link => ''}
-                             ]}
 =end
+                             :links => [{:label => 'Reviews', :link => '/reviews'}
+                             ]}
+
             ],
         },
 
@@ -518,6 +522,376 @@ brochures, written instructions
                 :address => 'Address:',
             }
         },
+
+
+        #reviews
+        :reviews_header => 'Product reviews from Google Checkout 2008 - 2013',
+            :reviews => [
+                {:stars => '5',
+                 :review => 'great item received before expected.  will shop with again!',
+                 :date => 'Apr 22, 2013'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Great product. Timely delivery. Really makes flossing with braces easy!',
+                    :date => 'Jan 18, 2013'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Communicated well and the product came quickly.  The problem is it is useless as the flossfish does not fit under my daughter&#39;s brace wires.',
+                    :date => 'Aug 28, 2012'
+                },
+                {
+                    :stars => '5',
+                    :review => 'speedy delivery, excellent international shipping rate.',
+                    :date => 'May 1, 2012'
+                },
+                {
+                    :stars => '5',
+                    :review => 'je n&#39;avais pas de facture avec la boite',
+                    :date => 'Apr 7, 2012'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Terrific! Helpful and informative website, fast shipping, great product!',
+                    :date => 'Feb 9, 2012'
+                },
+                {
+                    :stars => '2',
+                    :review => 'I never got my order.',
+                    :response => 'please email us your order number. We will try to track your order, re-ship it or issue you a refund .',
+                    :date => 'Jan 25, 2012'
+                },
+                {
+                    :stars => '5',
+                    :review => 'shipping was very fast! Arrived in two business days! However, I think I only received 9, instead of 10 FlossFish, but I&#39;sm not 100% sure.',
+                    :date => 'Jan 1, 2012'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Great tool!',
+                    :date => 'Dec 20, 2011'
+                },
+                {
+                    :stars => '4',
+                    :review => 'Great checkout process.  I&#39;sm a little disappointed that the product doesn&#39;st work for me because the potential is so awesome!!! But I&#39;sd recommend people try to use it, and plan to donate my unused products to my orthodontist.',
+                    :date => 'Dec 15, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Awesome product!',
+                    :date => 'Nov 27, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Awesome!!',
+                    :date => 'Nov 18, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'I had a few questions before I placed my order and my emails were answered very quickly.  The order process was easy and the shipping was fast.  No complaints from my end.  I will order from them again if I need any more.',
+                    :date => 'Nov 7, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Excellent - thank you',
+                    :date => 'sep 28, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'No problems at all.',
+                    :date => 'sep 2, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Great product and no problem purchase.',
+                    :date => 'Aug 10, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'great service',
+                    :date => 'Jul 12, 2011'
+                },
+                {
+                    :stars => '3',
+                    :review => 'It was ok, but it took them forever to get it here. I thought they had packed it, so that&#39;s why it was taking to long. When it finally came it was in a enevelope and the contents were in a baggie. Even though it took them a long time I kinda have to buy them again, as I have braces.',
+                    :date => 'Jun 26, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Wonderful product! Fast shipping! I am one satisfied customer!',
+                    :date => 'May 12, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'They are a great company!',
+                    :date => 'May 3, 2011'
+                },
+
+                {
+                    :stars => '5',
+                    :review => 'This is the best place to buy Floss Fish.  The product works great for people with braces and is easy to use.  A Floss Fish can last for months.  The price was very reasonable and the shipping very low.  The product arrived in less than 5 days.',
+                    :date => 'Apr 18, 2011'
+                },
+                {
+                    :stars => '3',
+                    :review => 'I had no problems with the order itself, but I am disappointed with the product.  I will not buy it again.',
+                    :date => 'Apr 18, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'FlossFish.com is a great company, and buying from them online is a seamless and easy experience.',
+                    :date => 'Apr 13, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Fast shipping and great product!!',
+                    :date => 'Apr 1, 2011'
+                },
+                {
+                    :stars => '3',
+                    :review => 'Great concept but the tip of the flossfish should be a little flexible to go through the braces easier.  Fast shipping, however I will not buy the product again.',
+                    :date => 'Mar 31, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Love the product and received it VERY quickly!',
+                    :date => 'Mar 24, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'I haven&#39;treceived them yet after 2 weeks.',
+                    :response => 'Hi David, I&#39;m very sorry for the delay. Our orders get held up in customs going to Canada sometimes.',
+                    :date => 'Mar 11, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Nice experience',
+                    :date => 'Mar 7, 2011'
+                },
+                {
+                    :stars => '5',
+                    :review => 'fast and easy',
+                    :date => 'Nov 2, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'No problems.  Order arrived withing a week.',
+                    :date => 'sep 15, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Everything was spot on with the order.  Recommended.',
+                    :date => 'Jun 21, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => '&#39;j&#39;ai recommandé l&#39;article à mon orthodontiste.',
+                    :date => 'May 5, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Great',
+                    :date => 'Apr 12, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Everything was great and received in a timely manner.',
+                    :date => 'Mar 9, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Really great correspondence no problems! ',
+                    :date => 'Feb 1, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Prompt service and good packaging was appreciated.',
+                    :date => 'Jan 25, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Excellent product, superfast shipping, will do business again. Strongly recommended.',
+                    :date => 'Jan 21, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'easy to order.  good communication.  quick ship.  cool product!',
+                    :date => 'Jan 6, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Very good!Thanks!',
+                    :date => 'Jan 4, 2010'
+                },
+                {
+                    :stars => '5',
+                    :review => 'The product is great.  The shopping experience was great too.',
+                    :date => 'Dec 29, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Frais de service un peu élever',
+                    :date => 'Dec 18, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Good, prompt response and ship.',
+                    :date => 'Nov 7, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Excellent service...speedy delivery!',
+                    :date => 'Oct 28, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Got exactly what I ordered and my package arrived In less than a week. Very pleased.',
+                    :date => 'Oct 24, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'These work really well - It has taken my son a little bit to get the hang of them but he&#39;s flossing!!',
+                    :date => 'Oct 13, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Very speedy process.',
+                    :date => 'sep 6, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Initially did not receive the order, but they were quick to resolve the issue.',
+                    :date => 'Aug 20, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'great!',
+                    :date => 'Jul 5, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Quick service, great product, I would definitely shop with them again!',
+                    :date => 'Jul 2, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'No problems. I placed the order and got the product by ground in a timley manner.',
+                    :date => 'Jun 27, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'I would have liked to have received directions with my purchase.  Overall, the product was as described and shipped fast.',
+                    :response => 'Hi Bradley, There should of been a instructions card put in with your order. On the front of the card it has flossfish.com on the back there should be written instuctions and a link to the video instructions....',
+                    :date => 'Jun 19, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Fast shipping and an incredibly useful tool for someone with braces.  Flossing now takes only a couple of minutes instead of  the 15 minutes it took before I discovered floss fish.  BUY IT',
+                    :date => 'Mar 12, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Wonderful!',
+                    :date => 'Feb 6, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Great!',
+                    :date => 'Jan 28, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Flossfish cut down my flossing time with braces in half! It&#39;s not good for super-tight spaces, but otherwise works better than other means of flossing.',
+                    :date => 'Jan 19, 2009'
+                },
+
+                {
+                    :stars => '5',
+                    :review => 'I really like the product.  It does make flossing with braces much quicker.  It has been harder for my children to figure out.',
+                    :date => 'Jan 5, 2009'
+                },
+                {
+                    :stars => '5',
+                    :review => 'excellent',
+                    :date => 'Dec 20, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Easy to buy. Quick to ship.',
+                    :date => 'Dec 5, 2008'
+                },
+
+                {
+                    :stars => '5',
+                    :review => 'It was a fast, efficient, and easy process.',
+                    :date => 'Nov 24, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'I received just what I ordered and in a timely fashion.',
+                    :date => 'Nov 15, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'awesome!!!!  great product!!!!!!   fast shipping!!!!!!!!!!  AAAAAAAA++++++++++',
+                    :date => 'Nov 11, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Purchase went smoothly -- quick delivery and no problems. The Floss Fish product was a bit more harder of a plastic than I thought it would be, and didn&#39;twork out well for my 9 year old&#39;s small mouth.',
+                    :date => 'Oct 28, 2008'
+                },
+                {
+                    :stars => '1',
+                    :review => 'the product is useless and a waste of money',
+                    :response => 'We are very sorry you are in the minority of people that the flossFish is not right for. The flossFish works well for around 70% of the people that use it. In cases where there is extreme crowding or small teeth',
+                    :date => 'Oct 28, 2008'
+                },
+                {
+                    :stars => '3',
+                    :review => 'seems somewhat hard to use, can&#39;tget below gumline as when using floss threaders.  Not sure if easier for kids to use on themselves. ',
+                    :date => 'Aug 28, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Excellent, super fast shipping!',
+                    :date => 'Aug 23, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'great-gerate-grate!',
+                    :date => 'Aug 21, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Transaction was easy and service was excellent',
+                    :date => 'Aug 20, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Excellent',
+                    :date => 'Jul 21, 2008'
+                },
+                {
+                    :stars => '1',
+                    :review => 'It advertises this product as a great thing for braces, but the product is awful. It doesn&#39;twork well at all. Cheap plastic, bad design, doesn&#39;tfit in many places between teeth.',
+                    :response => 'We are very sorry you are in the minority of people that the flossFish is not right for. The flossFish works well for around 70% of the people that use it. In cases where there is extreme crowding or small teeth',
+                    :date => 'May 14, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Very fast shipping',
+                    :date => 'May 5, 2008'
+                },
+                {
+                    :stars => '5',
+                    :review => 'Fabulous!!! What a great tool for our Ortho Pts PROPS!!!  Kim (OM) ',
+                    :date => 'Feb 21, 2008'
+                }
+            ],
+
+
 
         #otther content goes here
         :edit => {

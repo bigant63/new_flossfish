@@ -1,17 +1,22 @@
 %section
- %h1 Contacts Form
- = form_for @contact, :html => {:class=>'large-12'} do |f|
-  %ul
-   %li
-    = f.label :n, t(:"form_data.labels.name")
-    = f.text_field :n
-   = f.fields_for :addresses  do |address_element|
-    = render :partial => 'contacts/address_fields', :locals => {:f => address_element}
-   = f.fields_for :phones do |phone_element|
-    = render :partial => 'contacts/data_fields', :locals => {:f => phone_element, :data_label =>t(:"form_data.labels.biz_phone")}
-   = f.fields_for :emails do |email_element|
-    = render :partial => 'contacts/data_fields', :locals => {:f => email_element, :data_label =>t(:"form_data.labels.email")}
-  %p
-   = f.submit :class => 'button'
+  %h1 Contacts Form
+  = form_for @contact, :url => contacts_path, :html => {:class=>'large-12', } do |f|
+    %ul
+      %li
+       = f.select. :request_type :locals => {options_for_select([["Select One", ""], "Cell", "Work", "Office", "Home", "Other"])}
+      %li
+       = f.text_field, :locals => {:f => subject_element, :data_label =>t(:"form_data.labels.subject")}
+       = f.text_field, :locals => {:f => question_element, :data_label =>t(:"form_data.labels.question")}
+      %li{:data =>{"ng-show" => "addressForm"}} 
+        = f.label :n, t(:"form_data.labels.name")
+        = f.text_field :n
+      = f.fields_for :addresses  do |address_element|
+        = render :partial => 'contacts/address_fields', :locals => {:f => address_element}
+      = f.fields_for :phones do |phone_element|
+        = render :partial => 'contacts/data_fields', :locals => {:f => phone_element, :data_label =>t(:"form_data.labels.biz_phone")}
+      = f.fields_for :emails do |email_element|
+        = render :partial => 'contacts/data_fields', :locals => {:f => email_element, :data_label =>t(:"form_data.labels.email")}
+    %p
+      = f.submit :class => 'button'
 
-   /todo have js get the locale and change the selected index
+-#todo have js get the locale and change the selected index

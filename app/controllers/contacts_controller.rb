@@ -27,13 +27,22 @@ class ContactsController < ApplicationController
     if @contact.save
     else
     end
+
+todo: flash the thanks message and send to the correct page
+add dropdown asking for samples, brochures, question,
 =end
+   # redirect_to contactus_path
+
+
     redirect_to contactus_path
+    flash.now[:notice] = 'Thank you for your message!'
 
     #if the @contact.save is fine
     #   redirect_to @contact
     # else
     #  render new with the errors
+
+
     #end
 
   end

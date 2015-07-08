@@ -1,0 +1,17 @@
+ul.review-list {
+  li {
+    padding: 1rem;
+
+    .review-stars-container {
+      padding-left: 0;
+    }
+
+    p{
+      margin-bottom: .5rem;
+    }
+
+    em{
+    font-weight: 600;
+    }
+  }
+}
