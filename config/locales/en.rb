@@ -10,17 +10,20 @@
         ## and currency.
         :titles => {
             :home => 'Welcome to flossfish.com the easiest way to floss with braces. Flossing with braces is a pain, the flossFish will make it a lot easier',
-            :order => 'Order page - Welcome to flossfish.com, you can order flossFish here',
+            :order => 'Order page - Welcome to flossfish.com, you can order FlossFish here',
             :instructions => 'Instructions page - Welcome to flossfish.com',
             :more_info => 'More Information page - Welcome to flossfish.com',
             :contact_us => 'Contact us page - Welcome to flossfish.com',
-            :reviews => 'Reviews page - Welcome to flossfish.com',
+            :distributorinfo => 'Distributor Information page - Welcome to flossfish.com',
+            :faqs => 'FAQs page - Welcome to flossfish.com questions and answers page',
+            :calendar => 'Calendar page - Welcome to flossfish.com Events page',
+            :reviews => 'Reviews page - Welcome to flossfish.com reviews page',
             :videos => 'FlossFish video play list',
             :contacts => 'Contacts setup page'
         },
 
         :meta => {
-            :default => 'The flossFish is the easy way to floss with braces',
+            :default => 'The FlossFish is the easy way to floss with braces',
             :keywords => 'flossing with braces, floss for braces, braces, orthodontics, dental hygiene, hygiene for braces, cleaning braces'
         },
 
@@ -28,16 +31,72 @@
         #re-consider using a model and storing these in a db for better management
         :media => {
             :title => 'FlossFish video play list',
-            :description => 'Videos relating to the flossFish, dental hygiene and flossing with braces.',
+            :description => 'Videos relating to the FlossFish, dental hygiene and flossing with braces.',
 
             :play_list => {
                 :items => [   {
+                                  :title => 'FlossFish How To video',
+                                  :description => 'This is a step by step live video on how to use the FlossFish complete with close ups.',
+                                  :tnail_path => '/images/video_tnails/flossfish-how-to-tnail.png',
+                                  :still_path => '/images/video_tnails/flossfish-how-to-still.png',
+                                  :video_path => '/videos/flossfish-how-to.webm',
+                                  :video_path_download => '/videos/flossfish-how-to.mp4',
+                                  :duration => '530',
+                                  :provider => 'youtube',
+                                  :author => 'flossfishguy',
+                                  :date => '9/08/2015',
+                                  :tags => 'FlossFish, flossing with braces, orthodontics, how to floss with braces, dental hygiene',
+                                  :link => 'http://www.youtube.com/watch?v=ZiKPD_Z-zHw'
+                              },
+                              {
+                                  :title => 'Will the FlossFish work for me?',
+                                  :description => 'This video will give you a tip to test to see if the FlossFish will work for your braces.',
+                                  :tnail_path => '/images/video_tnails/flossfish-fit-tnail.png',
+                                  :still_path => '/images/video_tnails/flossfish-fit-still.png',
+                                  :video_path => '/videos/flossfish-fit.webm',
+                                  :video_path_download => '/videos/flossfish-fit.mp4',
+                                  :duration => '33',
+                                  :provider => 'youtube',
+                                  :author => 'flossfishguy',
+                                  :date => '9/08/2015',
+                                  :tags => 'FlossFish, flossing with braces, orthodontics, how to floss with braces, dental hygiene',
+                                  :link => 'http://www.youtube.com/watch?v=ZiKPD_Z-zHw'
+                              },  
+                              {
+                                  :title => 'How to floss your posterior teeth',
+                                  :description => 'This video will show you how to floss your posterior teeth using the FlossFish.',
+                                  :tnail_path => '/images/video_tnails/flossfish-fit-tnail.png',
+                                  :still_path => '/images/video_tnails/flossfish-fit-still.png',
+                                  :video_path => '/videos/flossfish-posteriors.webm',
+                                  :video_path_download => '/videos/flossfish-posteriors.mp4',
+                                  :duration => '129',
+                                  :provider => 'youtube',
+                                  :author => 'flossfishguy',
+                                  :date => '9/16/2015',
+                                  :tags => 'FlossFish, flossing with braces, orthodontics, how to floss with braces, dental hygiene, how to floss posterior teeth',
+                                  :link => 'https://www.youtube.com/watch?v=Gd0HlWY5_84'
+                              },     
+                              {
+                                  :title => 'How does the FlossFish compare to other devices?',
+                                  :description => 'Why should you choose the FlossFish over others? (plackers, ect...) The FlossFish is the reusable, making it the most earth-friendly and cost effective flossing tool on the market.',
+                                  :tnail_path => '/images/video_tnails/flossfish-fit-tnail.png',
+                                  :still_path => '/images/video_tnails/flossfish-fit-still.png',
+                                  :video_path => '/videos/flossfish-comparison.webm',
+                                  :video_path_download => '/videos/flossfish-comparison.mp4',
+                                  :duration => '129',
+                                  :provider => 'youtube',
+                                  :author => 'flossfishguy',
+                                  :date => '9/16/2015',
+                                  :tags => 'FlossFish, flossing with braces, orthodontics, how to floss with braces, dental hygiene, platyapus, plackers',
+                                  :link => 'https://www.youtube.com/watch?v=CC4SA5ECNmQ'
+                              },
+                              {
                                   :title => 'FlossFish Instructions Video',
-                                  :description => 'This is the live video showing how the flossFish works. The video shows the clinical trials video of the flossFish.',
+                                  :description => 'This is the live video showing how the FlossFish works. The video shows the clinical trial video of the FlossFish.',
                                   :tnail_path => '/images/video_tnails/video_trial-tnail.png',
                                   :still_path => '/images/video_tnails/video_trial-still.png',
                                   :video_path => '/videos/trial-instructions.webm',
-                                  :video_path_download => '/videos/trial-instructions.webm',
+                                  :video_path_download => '/videos/trial-instructions.mp4',
                                   :duration => '25',
                                   :provider => 'youtube',
                                   :author => 'Hilltop Corporation',
@@ -48,7 +107,7 @@
 
                     {
                                :title => 'FlossFish Animated Instructions Video',
-                               :description => 'This is a 3D animated video showing how the flossFish works. The video shows flossing with braces using the flossFish tool and shoots camera angels from in front and behind the teeth.',
+                               :description => 'This is a 3D animated video showing how the FlossFish works. The video shows flossing with braces using the FlossFish tool and shoots camera angels from in front and behind the teeth.',
                                :tnail_path => '/images/video_tnails/animated-tnail.png',
                                :still_path => '/images/video_tnails/animated-still.png',
                                :video_path => '/videos/animated-instructions.webm',
@@ -63,7 +122,7 @@
 
                            {
                                :title => 'FlossFish Hygienist Video Instructions',
-                               :description => 'This is the YouTube video showing how the hygienists at Dr. Powell&#39;s office uses the flossFish to floss patients.',
+                               :description => 'This is the YouTube video showing how the hygienists at Dr. Powell&#39;s office uses the FlossFish to floss patients.',
                                :tnail_path => '/images/video_tnails/clinical-tnail.png',
                                :still_path => '/images/video_tnails/clinical-still.png',
                                :video_path => '/videos/hygienists-video-yt.mp4',
@@ -77,11 +136,11 @@
                            },
                            {
                                :title => 'Requested Braces Help',
-                               :description => 'This is the YouTube video showing youtube name CityLoveShoes flosses using the flossFish.',
+                               :description => 'This is the YouTube video showing youtube name CityLoveShoes flosses using the FlossFish.',
                                :tnail_path => '/images/video_tnails/help_tnail.png',
                                :still_path => '/images/video_tnails/help_stil.png',
                                :video_path => '/videos/braces-help-yt.mp4',
-                               :duration => '660.39',
+                               :duration => '660',
                                :provider => 'youtube',
                                :author => 'CityLoveShoes',
                                :date => '5/23/2011',
@@ -440,17 +499,16 @@
                 :contact_us => 'Contact us'
             },
             :footer_nav => [{:label => 'Order',
-                             :links => [{:label => 'Login', :link => 'http://store-7h96btiy.mybigcommerce.com/login.php'},
-                                        {:label => 'Product Catalog', :link => 'http://store-7h96btiy.mybigcommerce.com/all-flossfish/'}
+                             :links => [{:label => 'Login', :link => 'http://store.flossfish.com/login.php'},
+                                        {:label => 'Product Catalog', :link => 'http://store.flossfish.com/all-flossfish/'}
 =begin
                                         {:label => 'Order Form', :link => '/orderform'}
 =end
                              ]},
                             {:label => 'Help',
                              :links => [{:label => 'Instructions', :link => '/instructions'},
-=begin
-                                        {:label => 'FAQ&#39;s', :link => ''},
-=end
+                                        {:label => 'FAQ&#39;s', :link => '/faqs'},
+
                                         {:label => 'Contact Us', :link => '/contactus'}
                              ]},
                             {:label => 'Downloads',
@@ -463,12 +521,10 @@ brochures, written instructions
                              ]},
 
                             {:label => 'More',
-=begin
-                                        {:label => 'Link Love', :link => ''},
-                                        {:label => 'Distributor Info', :link => ''},
-                                        {:label => 'Our Calendar', :link => ''},
-=end
-                             :links => [{:label => 'Reviews', :link => '/reviews'}
+                             :links => [
+                              {:label => 'Reviews', :link => '/reviews'}, 
+                              {:label => 'Our Calendar', :link => '/calendar'},
+                              {:label => 'Distributor Info', :link => 'distributorinfo'}
                              ]}
 
             ],
@@ -480,8 +536,10 @@ brochures, written instructions
         :homepage => {
             :introduction => ' Welcome to flossfish.com. My name is Franky Fish. Have braces? Hate to floss? The flossFish is the perfect flossing tool for braces',
             :what_is_flossfish => 'What is the FlossFish?',
+            :promo => 'New FlossFish Orthodontic Kits',
             :flossfish_is => 'The flossFish<sup>(TM)</sup> uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the <a href="%{link}">instructions</a> page.',
             :selection => 'The selected locale is automatically passed back to the application within the URL for each request, but <i>does not</i> require explicit setting of the locale within named routes, or session. Once setup, locale selection just works.',
+            :buy_button => {:label => 'Buy Now', :link => 'http://store.flossfish.com/kits/'}
         },
 
         :instructions => {
@@ -507,6 +565,18 @@ brochures, written instructions
                 }
             ]
         },
+
+
+        :more_info => {
+            :header => 'More Information page',    
+            :links => [
+              {:label => 'Questions and Answers', :link =>'/faqs', :blurb =>''},
+              {:label => 'Reviews', :link =>'/reviews', :blurb =>''},
+              {:label => 'Distributor Information', :link =>'/distributorinfo', :blurb =>''}
+            ]
+
+          },
+
         :contact_us =>{
             :header => 'FlossFish.com Contact us page',
             :email => 'info@flossfish.com',
@@ -523,9 +593,48 @@ brochures, written instructions
             }
         },
 
+        #faq
+        :faq => {
+          :header =>'Question and Answers',
+          :list => [
+                {:q => 'What is the FlossFish?',
+                  :a => 'The FlossFish is a flossing tool that uses an dental floss, goes under the arch wire and between brackets so you can floss normally with braces on.',
+                  :v => '/videos/flossfish-how-to.mp4'
+                },
+                {:q => 'Why should I use the FlossFish?', :a => 'The FlossFish will save you time and make flossing a lot easier.'},
+                {:q => 'Is the FlossFish difficult to use?',
+                  :a => 'For most users it is not hard at all. For some, there is sometimes a learning curve. Once users get the hang of it the flossFish will save you time and effort.'
+                },
+                {:q => 'What kind of floss do I need to use?', :a => 'Any type you like. If you have trouble putting the floss through the hole on the FlossFish we recommend using super floss (the floss with the stiff end). Super floss makes it easier to thread the FlossFish but also allows you to quickly switch to back to threading for tight spaces where the FlossFish may not fit.'},
+                {:q => 'I am outside of the united States. Do you have a distributor in my country?', :a => 'We might. We do ship worldwide. To see if we currently have a distributor in your country, click the link <a href="/distributors">here</a>.'},
+                {:q => 'Do you give out free samples?', :a => 'Yes, to dental professionals. If you are not a dental professional, you might ask one to request a sample on your behalf. Also if you see someone walking around with the FlossFish logo on their shirt, more than likely they have samples and would be happy to give you one if you ask politely (just not while they&#39re eating dinner or watching a movie) :-)'},
+                {:q => 'How long does the FlossFish last?', :a => 'With proper use, 1 should last at least 6 months.'},
+                {:q => 'Where can I order the FlossFish?', :a => 'You can order at our online store by clicking <a href="http://store.flossfish.com">here</a>.'},
+                {:q => 'Do patients really use the FlossFish?', :a => 'Yes. During our survey, we found about 70% of patients that are given the FlossFish use it and use it repeatedly.'},
+                {:q => 'Do you recommend the FlossFish for children?', :a => 'It is dependent on the child. By the age most children have braces, the hand-eye coordination needed to use FlossFish has developed but for some children it maybe difficult to use. We encourage parents and dental professionals to help children that have a difficult time using the FlossFish. There maybe a learning curve for some when using the FlossFish. Our studies have shown that once users get past that curve they floss more thus promoting better oral hygiene'},
+                 {:q => 'Will the FlossFish work for me?',
+                   :a => 'The FlossFish worked for about 70% of our surveyed trial participants.  The tool will not fit in tight spaces if you have small teeth or crowding. Most patients that have crowding issues will use the flossFish where they can in combination with threader floss to save time flossing. Hopefully as the braces adjust your teeth, you should be able to fit the flossFish in more areas and save time flossing',
+                   :v => '/videos/flossfish-fit.webm'
+                 },
+                 {:q => 'How big is the FlossFish?', :a => 'The shaft is what most people are referring to when asking about size. The shaft is 4/64 inch wide and 2/64 thick. It is about the size of the fat end of a standard toothpick.',
+                  :v => '/videos/flossfish-fit.webm'
+                  },
+                 {:q => 'Will the FlossFish work for my bridge or permanent retainer?', :a => 'No. Some have tried but for most it is too thick to use on bridges and permanent appliances.'},
+                 {:q => 'Can I buy the FlossFish locally at any stores?', :a => 'No, unfortunately the FlossFish is not currently being sold in stores. You can buy them here at flossfish.com (we ship world wide), Amazon.com archwired.com, AB orthodontics in (Australia and New Zealand) and Eiko Corporation (Japan)'},          
+                 {:q => 'Is the FlossFish just used for orthodontic patients?', 
+                  :a => 'Some use it for access issues (Fat fingers, reach issues ect…), others use the FlossFish because they do not like to use their fingers to hold the floss and some kids just like the colors. <strong>It also works great for hygienist that floss their ortho patients.</strong>',
+                  :v => '/videos/hygienists-video-yt.mp4'},
+                 {:q => 'How do you do the posterior teeth?', :v=> '/videos/flossfish-posteriors.webm'},
+                 {:q => 'How deos is the FlossFish diffrent from some of the other tools on the market?', 
+                  :a=>'The flossfish is the reusable, making it the most earth-friendly and cost effective flossing tool on the market.',
+                  :v => '/videos/flossfish-comparison.webm'}
+                ]},
+
 
         #reviews
-        :reviews_header => 'Product reviews from Google Checkout 2008 - 2013',
+        :reviews_header => 'Product reviews',
+        :reviews_intro => 'If you would like to see our latest reviews at our <a href="http://store.flossfish.com" target="_blank">store</a> or at <a href="http://www.amazon.com/flossfish/b/ref=bl_dp_s_web_13106446011?ie=UTF8&node=13106446011&field-lbr_brands_browse-bin=flossfish" target="_blank">Amazon</a> click one the links and a product.',
+        :google_header => 'Product reviews from Google Checkout 2008 - 2013',
             :reviews => [
                 {:stars => '5',
                  :review => 'great item received before expected.  will shop with again!',
@@ -876,7 +985,7 @@ brochures, written instructions
                 {
                     :stars => '1',
                     :review => 'It advertises this product as a great thing for braces, but the product is awful. It doesn&#39;twork well at all. Cheap plastic, bad design, doesn&#39;tfit in many places between teeth.',
-                    :response => 'We are very sorry you are in the minority of people that the flossFish is not right for. The flossFish works well for around 70% of the people that use it. In cases where there is extreme crowding or small teeth',
+                    :response => 'We are very sorry you are in the minority of people that the flossFish is not right for. The flossFish works well for around 70% of the people that use it. It will not work in cases where there is extreme crowding or small teeth.',
                     :date => 'May 14, 2008'
                 },
                 {
@@ -891,9 +1000,10 @@ brochures, written instructions
                 }
             ],
 
+        # distributors
+        :distributors => [{ :name => 'Amazon', :link =>'', :flag_link =>''}, { :name => 'AB Orthodontics', :link =>'', :flag_link =>''}, { :name => 'Dental Kit', :link =>'', :flag_link =>''}, { :name => 'Eiko Corporation', :link =>'', :flag_link =>''}],
 
-
-        #otther content goes here
+        #other content goes here
         :edit => {
             :intro => 'What should the cost of %{item} be?',
             :again => 'Please try again.',
@@ -913,6 +1023,7 @@ brochures, written instructions
         :images => {
             :alts => {
                 :logo => 'flossFish logo',
+                :ortho_kit => 'New FlossFish Orthodontic Kits',
                 :wcdemo => 'This is an image! in english'
             }
         },

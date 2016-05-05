@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140505194102) do
+ActiveRecord::Schema.define(version: 20140902200111) do
 
   create_table "addresses", force: :cascade do |t|
     t.string   "contact_id", limit: 255
@@ -26,10 +26,17 @@ ActiveRecord::Schema.define(version: 20140505194102) do
     t.datetime "updated_at"
   end
 
+  create_table "articles", force: :cascade do |t|
+    t.string   "title",      limit: 255
+    t.text     "text"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "caluris", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.date     "dt"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -42,10 +49,20 @@ ActiveRecord::Schema.define(version: 20140505194102) do
     t.datetime "updated_at"
   end
 
+  create_table "comments", force: :cascade do |t|
+    t.string   "commenter",  limit: 255
+    t.text     "body"
+    t.integer  "article_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["article_id"], name: "index_comments_on_article_id"
+
   create_table "contact_attrs", force: :cascade do |t|
     t.string   "contact_id",  limit: 255
-    t.boolean  "isSubcriber", limit: 1
-    t.boolean  "isVip",       limit: 1
+    t.boolean  "isSubcriber"
+    t.boolean  "isVip"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -75,7 +92,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "emails", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -91,7 +108,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "impps", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -99,7 +116,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "interests", force: :cascade do |t|
     t.string   "contact_id",   limit: 255
     t.string   "label",        limit: 255
-    t.integer  "level_of_int", limit: 4
+    t.integer  "level_of_int"
     t.string   "data",         limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -107,7 +124,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
 
   create_table "pdates", force: :cascade do |t|
     t.string   "contact_id", limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -115,7 +132,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "phones", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -123,7 +140,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "photos", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.string   "meta",       limit: 255
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -132,7 +149,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "requests", force: :cascade do |t|
     t.string   "from",       limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.date     "dt"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -141,7 +158,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
   create_table "tags", force: :cascade do |t|
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
-    t.text     "data",       limit: 65535
+    t.text     "data"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -150,7 +167,7 @@ ActiveRecord::Schema.define(version: 20140505194102) do
     t.string   "contact_id", limit: 255
     t.string   "label",      limit: 255
     t.string   "data",       limit: 255
-    t.text     "meta",       limit: 65535
+    t.text     "meta"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

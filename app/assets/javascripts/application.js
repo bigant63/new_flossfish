@@ -12,6 +12,6 @@
 //
 //= require angular
 //= require foundation
-//= require modernizr
 //= require turbolinks
 // require_tree .
+//= require modernizr

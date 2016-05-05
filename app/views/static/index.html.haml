@@ -10,9 +10,10 @@
    /todo: language bundle this
    %h5.highlight-header #{t(:"homepage.what_is_flossfish")}
    %p #{t(:"homepage.flossfish_is", :link=> instructions_url).html_safe}
+   %h5.highlight-header.promo-header #{t(:"homepage.promo")}
+   %img.marketing-photo{:src => "/images/ortho-kit-marketing.png", :alt => t(:"images.alts.ortho_kit")}
 
+    %a.button.promo-link{:href => t(:"homepage.buy_button.link")} #{t(:"homepage.buy_button.label")}
   %article
    /todo: you will need to have a controller get a random review then include it here
  //  = render :partial => 'shared/reviews_include'
-
-

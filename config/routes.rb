@@ -37,6 +37,9 @@ NewFlossfish::Application.routes.draw do
   get 'instructions', to: 'static#instructions'
   get 'moreinfo', to: 'static#moreinfo'
   get 'reviews', to: 'static#reviews'
+  get 'faqs', to: 'static#faqs'
+  get 'calendar', to: 'static#calendar'
+  get 'distributorinfo', to: 'static#distributorinfo'
   get 'contacts/new'
   get 'contacts/index'
 

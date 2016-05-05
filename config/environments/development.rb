@@ -25,8 +25,14 @@ NewFlossfish::Application.configure do
   # Debug mode disables concatenation and preprocessing of assets.
   # This option may cause significant delays in view rendering with a large
   # number of complex assets.
-  config.assets.debug = true
+  #config.assets.debug = true
   config.serve_static_files = true
+
+  config.assets.compile = true
+config.assets.compress = false
+config.assets.debug = false
+config.assets.digest = false
+
   #config.assets.paths << Rails.root.join("app", "assets", "fonts")
   # Precompile additional assets
   config.assets.precompile << /\.(?:svg|eot|woff|ttf)\z/

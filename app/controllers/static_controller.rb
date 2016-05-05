@@ -31,11 +31,24 @@ class StaticController < ApplicationController
     #flash.keep(:notice)
   end
 
-
+ def faqs
+    @header_object = {:title => t(:'titles.faqs'), :desc => t(:'meta.default')}
+    @page_name = faqs_path
+  end 
 
   def reviews
     @header_object = {:title => t(:'titles.reviews'), :desc => t(:'meta.default')}
     @page_name = reviews_path
+  end 
+
+  def calendar
+    @header_object = {:title => t(:'titles.calendar'), :desc => t(:'meta.default')}
+    @page_name = calendar_path
+  end 
+
+  def distributorinfo
+    @header_object = {:title => t(:'titles.distributorinfo'), :desc => t(:'meta.default')}
+    @page_name = distributorinfo_path
   end
 
 

@@ -3,7 +3,7 @@ var flag = false, jwflag;
 
 jwplayer().onReady(function(){
     jwflag = true;
-    jwplayer().load([{file:"/assets/myVideo.mp4"}]);
+    jwplayer().load([{file:"/videos/flossfish-how-to.webm"}]);
 });
 
 $('.play-link').on('click touchstart', function(e){
@@ -19,5 +19,3 @@ $('.play-link').on('click touchstart', function(e){
          jwplayer().play();
      }
  });
-
-

@@ -1,6 +1,8 @@
 %div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
   %div.small-12.medium-8.large-8.columns
-    %h4=t(:"reviews_header").html_safe
+    %h4.highlight-header=t(:"reviews_header").html_safe
+    %p=t(:"reviews_intro").html_safe
+    %h5=t(:"google_header").html_safe
     %ul.review-list
       = list_of(t(:"reviews")) do |item|
         %span=item[:date]

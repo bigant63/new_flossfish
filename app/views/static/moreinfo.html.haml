@@ -1,5 +1,7 @@
 %div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
-/faq link, write a review (submit a video), interested in being a distributor, social media => follow us on fb, tweet about us,
-/view our show schedule, link love, submit a (youtube) video
-/request brochures, instruction cards or free samples. download our product catalog, create an invoice, order by fax
-%div.small-12.medium-12.large-12.columns
+ %div.small-12.medium-12.large-12.columns.more-info-container
+  %h4.highlight-header #{t(:"more_info.header")}
+  %ol.instructions-list
+   = list_of(t(:"more_info.links")) do |item|
+    %a{:href => item[:link]}=item[:label].html_safe
+   

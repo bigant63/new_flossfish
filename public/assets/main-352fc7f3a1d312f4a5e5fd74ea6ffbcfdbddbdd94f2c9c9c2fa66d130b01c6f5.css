@@ -1,0 +1,999 @@
+/* line 4, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer {
+  display: inline-block;
+  background-color: #595454;
+  width: 100%;
+  margin-top: 15px;
+}
+/* line 10, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer ul {
+  float: left;
+  margin-right: 7%;
+}
+/* line 4, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_mixins.scss */
+footer ul a {
+  color: #85c9ee;
+}
+/* line 7, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_mixins.scss */
+footer ul a:hover {
+  color: #fff;
+}
+/* line 10, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_mixins.scss */
+footer ul a:visited {
+  color: #85c9ee;
+}
+/* line 13, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_mixins.scss */
+footer ul a:active {
+  color: #85c9ee;
+}
+/* line 14, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer ul li {
+  list-style: none;
+}
+/* line 16, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer ul li:first-child {
+  color: #fff;
+  font-weight: 600;
+}
+/* line 23, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer div {
+  padding: 10px 20px 0 20px;
+  display: inline-block;
+  width: 100%;
+}
+/* line 28, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer div.copyright-info {
+  padding: 0;
+  background-color: #85c9ee;
+  text-align: center;
+  color: #fff;
+}
+/* line 34, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/partials/_footer.scss */
+footer div.copyright-info p {
+  padding: 15px 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local("Open Sans Light"), url(/assets/OpenSans-Light-83a5c3512b7e56bef9b0d5451adf664b070eb3cf6278e69e2cf4fa0b2d2ef379.eot) format("embedded-opentype"), url(/assets/OpenSans-Light-3fc333eb3107febd406586ee8206bc0ee2aeb7f6c7a77f3923a353b72b0ca080.ttf) format("truetype"), url(/assets/OpenSans-Light-a1cb81c9f07f1f399db66ec188c02a1c74bc382df9a8550ab8091aac93dff8a2.woff) format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Open Sans"), url(/assets/OpenSans-Regular-25f7c6430e4b537dfa6bbe5554d4641c0fbdbf3f9351aab6cd91d43d11738528.eot) format("embedded-opentype"), url(/assets/OpenSans-Regular-dee2d2b7658161d7efa0dede8298b64bf88c8bc1fea782fc10468c9269e78d4a.ttf) format("ttf"), url(/assets/OpenSans-Regular-9ecb8504258d8576dadbe37b75bb434cc95a0dde24225ebfea9c8aea99df8ea9.svg) format("svg"), url(/assets/OpenSans-Regular-22e7a1b10c110072f5a0bfd16e2197a76b279ec879bcce8978fada1dc9ee5d40.woff) format("woff");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Open Sans Semibold"), url(/assets/OpenSans-Semibold-efe97650f3270aca9ba594789ca75ba7b1fc1a22d8189b3439e6dfb57a16e853.eot) format("embedded-opentype"), url(/assets/OpenSans-Semibold-9f8567ea7c2d954377d5a3c26bdaf666ff993dd6a2d4e7e6931917a0286514a2.ttf) format("truetype"), url(/assets/OpenSans-Semibold-26b216fadb2ffcd542ca56c2d84f9918f62e40de89bf88b4211fffacd2a4ad83.woff) format("woff"), url(/assets/OpenSans-Semibold-dd081541c24b1c21f3358ec72f41d0da5773ab1e999dbd2263d493adf68ad6be.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Open Sans Bold"), url(/assets/OpenSans-Bold-5753780fe4ed044cfb98144f0bd6f8da560e00e485573ee038acf26b26a849b2.eot) format("embedded-opentype"), url(/assets/OpenSans-Bold-eeee8057e8b35113884c14c993ea88418d18626bfbcd8842580f721dc0690a8b.ttf) format("truetype"), url(/assets/OpenSans-Bold-a0357cb694b5284870c77c0dbcaf33f238004800419288afde313317b0dbd0b7.woff) format("woff"), url(/assets/OpenSans-Bold-c2ed48332ad6c7760c53dfa2a191a7ac7d943f66d3e8c304f7aa87623818a9e9.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local("Open Sans Extrabold"), url(/assets/OpenSans-ExtraBold-9a6135c70f19792a32979177a2a9a585f41a8727d3a5cb39160bae7aaabf0744.eot) format("embedded-opentype"), url(/assets/OpenSans-ExtraBold-d5ec46188792388f1ef48c6421d25d73cad6765b9930defa1f28dc7d1790105a.ttf) format("truetype"), url(/fonts/OpenSans-ExtraBold.wof) format("woff"), url(/assets/OpenSans-ExtraBold-d8f181d653409d981a256c3c0b01ec5fac2e1d3cd4f0c368040f8ce2e6cd04ef.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 300;
+  src: local("Open Sans Light Italic"), url(/assets/OpenSans-LightItalic-fbabc5a719bc6c152b2871a552939ad8b0bc3e26e71ef8c68279cd96fc34a077.eot) format("embedded-opentype"), url(/assets/OpenSans-LightItalic-7eb166fdf2e73d393aecb11f569f40ce35fe327c30b42c5b1d548a7e39e9641a.ttf) format("truetype"), url(/assets/OpenSans-LightItalic-641673bef88ac6746fb4bb5cc05efa040d03603aea985ab84e44ecc9fc51cb26.woff) format("woff"), url(/assets/OpenSans-LightItalic-05ec48e6d45659eac6a2c9b9a40eb0a476d22f0b866d5713ce4179b9e2a6e76d.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local("Open Sans Italic"), url(/assets/OpenSans-Italic-99e6e0467bb7563740c6bb641144f3dac0faf2837775adc073e71abbdd73b92f.eot) format("embedded-opentype"), url(/assets/OpenSans-Italic-bdf983a7d3f8b72e7819dd5a8297a8db62d82b84af2434950a2ed2ca10678c19.ttf) format("truetype"), url(/assets/OpenSans-Italic-1e2916c514af4531e75fc3b6ab19dced7708cd47a7702cb1c91c1d53416c6a2c.woff) format("woff"), url(/assets/OpenSans-Italic-acfff465cdd737f5e493632b802e642c861bd3787087eac0e3fec2eec31e419a.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 600;
+  src: local("Open Sans Semibold Italic"), url(/assets/OpenSans-SemiboldItalic-d1a2f55cad32dbfd1a807d0dfb708744ce3e760d5b1dba43bf525b13f8f0658b.eot) format("embedded-opentype"), url(/assets/OpenSans-SemiboldItalic-478acaaa7b6aa3c74814a1680a4bc3ffbef0582af91d4bf982cb863a0832917f.ttf) format("truetype"), url(/assets/OpenSans-SemiboldItalic-bb7bba640412aaea13f91fd8fa0c3a3bb94dfa46670e6c77a16377542152df0d.woff) format("woff"), url(/assets/OpenSans-SemiboldItalic-1b34d27046d4fa0f844d76ac92955c330ebcaa96bafaf847b4b6a1f7e871a128.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local("Open Sans Bold Italic"), url(/assets/OpenSans-BoldItalic-4b19a030678b683e03bea77934eb9e8322fa707c6647510fe960dbbfc7173d43.eot) format("embedded-opentype"), url(/assets/OpenSans-BoldItalic-6c4e465946864f576c027d965fc2d6d718065330e68494e2ecd0035a277bdb90.ttf) format("truetype"), url(/assets/OpenSans-BoldItalic-d3cd72b3406363d94d62d7ae9305bdad3654ffb99dd041d574524077a2c0972f.woff) format("woff"), url(/assets/OpenSans-BoldItalic-96b0b1e218e7edff8edd5d47a9f6946252b257be013515992eb37d9e4d18ee16.svg) format("svg");
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: italic;
+  font-weight: 800;
+  src: local("Open Sans Extrabold Italic"), url(/assets/OpenSans-ExtraBoldItalic-df51fa46c0024f7c32fe6d3d5e45dea9e653a8de15166d717f82c5acda0e23bd.eot) format("embedded-opentype"), url(/assets/OpenSans-ExtraBoldItalic-501587775e7e8fdb47ff855d6fbd4a8d8ea51483d38156697ea2f6f7de6a73de.ttf) format("truetype"), url(/assets/OpenSans-ExtraBoldItalic-143cb3a641ad172f80d54bf7f501ebc9caa5a2166bd251bf909d4feb7cc259bc.woff) format("woff"), url(/assets/OpenSans-ExtraBoldItalic-209fed5a87d8d565435d112e68732b1003a30e323e0c503b7d6f9db0727ceb6e.svg) format("svg");
+}
+/* line 4, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+a {
+  color: #5fabd9;
+}
+/* line 7, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+a:hover {
+  color: #ff6600;
+  background: transparent;
+}
+/* line 11, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+a:visited {
+  color: #5fabd9;
+}
+/* line 14, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+a:active {
+  color: #5fabd9;
+}
+
+/* line 19, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+li {
+  list-style: none;
+}
+
+/* line 23, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+body, p, ol, ul, td {
+  font-size: 14px;
+}
+
+/* line 27, /Users/anthonyhill/Dropbox/railsProjects/new_flossfish/app/assets/stylesheets/modules/_all.scss */
+.highlight-header {
+  color: #0b9ed9;
+}
+
+/* line 431, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-version {
+  font-family: "/5.5.3/";
+}
+
+/* line 435, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-small {
+  font-family: "/only screen/";
+  width: 0;
+}
+
+/* line 440, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-small-only {
+  font-family: "/only screen and (max-width: 40em)/";
+  width: 0;
+}
+
+/* line 445, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-medium {
+  font-family: "/only screen and (min-width:40.0625em)/";
+  width: 40.0625em;
+}
+
+/* line 450, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-medium-only {
+  font-family: "/only screen and (min-width:40.0625em) and (max-width:64em)/";
+  width: 40.0625em;
+}
+
+/* line 455, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-large {
+  font-family: "/only screen and (min-width:64.0625em)/";
+  width: 64.0625em;
+}
+
+/* line 460, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-large-only {
+  font-family: "/only screen and (min-width:64.0625em) and (max-width:90em)/";
+  width: 64.0625em;
+}
+
+/* line 465, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-xlarge {
+  font-family: "/only screen and (min-width:90.0625em)/";
+  width: 90.0625em;
+}
+
+/* line 470, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-xlarge-only {
+  font-family: "/only screen and (min-width:90.0625em) and (max-width:120em)/";
+  width: 90.0625em;
+}
+
+/* line 475, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-mq-xxlarge {
+  font-family: "/only screen and (min-width:120.0625em)/";
+  width: 120.0625em;
+}
+
+/* line 480, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+meta.foundation-data-attribute-namespace {
+  font-family: false;
+}
+
+/* line 489, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 492, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 498, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+html,
+body {
+  font-size: 14px;
+}
+
+/* line 502, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+body {
+  background: #fff;
+  color: #222;
+  cursor: auto;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.4;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+/* line 515, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+a:hover {
+  cursor: pointer;
+}
+
+/* line 518, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 520, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  -ms-interpolation-mode: bicubic;
+}
+
+/* line 525, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+#map_canvas img,
+#map_canvas embed,
+#map_canvas object,
+.map_canvas img,
+.map_canvas embed,
+.map_canvas object,
+.mqa-display img,
+.mqa-display embed,
+.mqa-display object {
+  max-width: none !important;
+}
+
+/* line 532, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.left {
+  float: left !important;
+}
+
+/* line 533, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.right {
+  float: right !important;
+}
+
+/* line 239, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+/* line 240, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.clearfix:after {
+  clear: both;
+}
+
+/* line 537, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.hide {
+  display: none;
+}
+
+/* line 542, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.invisible {
+  visibility: hidden;
+}
+
+/* line 548, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+.antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* line 551, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+img {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* line 561, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+textarea {
+  height: auto;
+  min-height: 50px;
+}
+
+/* line 564, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_global.scss */
+select {
+  width: 100%;
+}
+
+/* line 158, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.text-left {
+  text-align: left !important;
+}
+
+/* line 159, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.text-right {
+  text-align: right !important;
+}
+
+/* line 160, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.text-center {
+  text-align: center !important;
+}
+
+/* line 161, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.text-justify {
+  text-align: justify !important;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .small-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 40.0625em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .medium-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.0625em) and (max-width: 90em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 64.0625em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .large-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.0625em) and (max-width: 120em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 90.0625em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.0625em) and (max-width: 6249999.9375em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-only-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-only-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-only-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-only-text-justify {
+    text-align: justify !important;
+  }
+}
+@media only screen and (min-width: 120.0625em) {
+  /* line 165, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-text-left {
+    text-align: left !important;
+  }
+
+  /* line 166, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-text-right {
+    text-align: right !important;
+  }
+
+  /* line 167, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-text-center {
+    text-align: center !important;
+  }
+
+  /* line 168, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .xxlarge-text-justify {
+    text-align: justify !important;
+  }
+}
+/* Typography resets */
+/* line 196, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+/* Default Link Styles */
+/* line 220, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+a {
+  color: #008CBA;
+  line-height: inherit;
+  text-decoration: none;
+}
+/* line 225, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+a:hover, a:focus {
+  color: #0078a0;
+}
+/* line 233, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+a img {
+  border: none;
+}
+
+/* Default paragraph styles */
+/* line 237, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+p {
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  text-rendering: optimizeLegibility;
+}
+/* line 245, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+p.lead {
+  font-size: 1.21875rem;
+  line-height: 1.6;
+}
+/* line 247, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+p aside {
+  font-size: 0.875rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+/* Default header styles */
+/* line 255, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h1, h2, h3, h4, h5, h6 {
+  color: #222222;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 0.5rem;
+  margin-top: 0.2rem;
+  text-rendering: optimizeLegibility;
+}
+/* line 265, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: #6f6f6f;
+  font-size: 0.8em;
+  line-height: 0;
+}
+
+/* line 272, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h1 {
+  font-size: 30.375rem;
+}
+
+/* line 273, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h2 {
+  font-size: 24.375rem;
+}
+
+/* line 274, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h3 {
+  font-size: 19.6875rem;
+}
+
+/* line 275, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h4 {
+  font-size: 15.6875rem;
+}
+
+/* line 276, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h5 {
+  font-size: 11;
+}
+
+/* line 277, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+h6 {
+  font-size: 11;
+}
+
+/* line 279, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.subheader {
+  line-height: 1.4;
+  color: #6f6f6f;
+  font-weight: normal;
+  margin-top: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* line 281, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+hr {
+  border: solid #DDDDDD;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 1.25rem 0 1.1875rem;
+}
+
+/* Helpful Typography Defaults */
+/* line 290, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 296, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+/* line 302, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+small {
+  font-size: 0.8em;
+  line-height: inherit;
+}
+
+/* line 307, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+code {
+  background-color: #f8f8f8;
+  border-color: #dfdfdf;
+  border-style: solid;
+  border-width: 1px;
+  color: #333333;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+  font-weight: normal;
+  padding: 0.125rem 0.3125rem 0.0625rem;
+}
+
+/* Lists */
+/* line 319, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul,
+ol,
+dl {
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.6;
+  list-style-position: outside;
+  margin-bottom: 1.25rem;
+}
+
+/* line 329, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul {
+  margin-left: 1.1rem;
+}
+
+/* Unordered Lists */
+/* line 336, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul li ul,
+ul li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+/* line 345, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul.square li ul, ul.circle li ul, ul.disc li ul {
+  list-style: inherit;
+}
+/* line 348, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul.square {
+  list-style-type: square;
+  margin-left: 1.1rem;
+}
+/* line 349, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul.circle {
+  list-style-type: circle;
+  margin-left: 1.1rem;
+}
+/* line 350, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ul.disc {
+  list-style-type: disc;
+  margin-left: 1.1rem;
+}
+
+/* Ordered Lists */
+/* line 354, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ol {
+  margin-left: 1.4rem;
+}
+/* line 357, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+ol li ul,
+ol li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+}
+
+/* line 366, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.no-bullet {
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 371, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.no-bullet li ul,
+.no-bullet li ol {
+  margin-left: 1.25rem;
+  margin-bottom: 0;
+  list-style: none;
+}
+
+/* Definition Lists */
+/* line 382, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+dl dt {
+  margin-bottom: 0.3rem;
+  font-weight: bold;
+}
+/* line 386, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+dl dd {
+  margin-bottom: 0.75rem;
+}
+
+/* Abbreviations */
+/* line 390, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+abbr,
+acronym {
+  text-transform: uppercase;
+  font-size: 90%;
+  color: #222;
+  cursor: help;
+}
+
+/* line 397, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+abbr {
+  text-transform: none;
+}
+/* line 399, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+abbr[title] {
+  border-bottom: 1px dotted #DDDDDD;
+}
+
+/* Blockquotes */
+/* line 405, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+blockquote {
+  margin: 0 0 1.25rem;
+  padding: 0.5625rem 1.25rem 0 1.1875rem;
+  border-left: 1px solid #DDDDDD;
+}
+/* line 410, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+blockquote cite {
+  display: block;
+  font-size: 0.8125rem;
+  color: #555555;
+}
+/* line 414, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+blockquote cite:before {
+  content: "\2014 \0020";
+}
+/* line 418, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+blockquote cite a,
+blockquote cite a:visited {
+  color: #555555;
+}
+
+/* line 424, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+blockquote,
+blockquote p {
+  line-height: 1.6;
+  color: #6f6f6f;
+}
+
+/* Microformats */
+/* line 431, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.vcard {
+  display: inline-block;
+  margin: 0 0 1.25rem 0;
+  border: 1px solid #DDDDDD;
+  padding: 0.625rem 0.75rem;
+}
+/* line 437, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.vcard li {
+  margin: 0;
+  display: block;
+}
+/* line 441, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.vcard .fn {
+  font-weight: bold;
+  font-size: 0.9375rem;
+}
+
+/* line 448, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.vevent .summary {
+  font-weight: bold;
+}
+/* line 450, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+.vevent abbr {
+  cursor: default;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  padding: 0 0.0625rem;
+}
+
+@media only screen and (min-width: 40.0625em) {
+  /* line 461, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+  }
+
+  /* line 462, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h1 {
+    font-size: 31;
+  }
+
+  /* line 463, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h2 {
+    font-size: 25;
+  }
+
+  /* line 464, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h3 {
+    font-size: 20;
+  }
+
+  /* line 465, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h4 {
+    font-size: 16;
+  }
+
+  /* line 466, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h5 {
+    font-size: 11;
+  }
+
+  /* line 467, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h6 {
+    font-size: 11;
+  }
+}
+/*
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ * Credit to Paul Irish and HTML5 Boilerplate (html5boilerplate.com)
+*/
+@media print {
+  /* line 479, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  * {
+    background: transparent !important;
+    color: #000000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  /* line 486, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  /* line 488, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  /* line 490, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  /* line 493, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+
+  /* line 497, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999999;
+    page-break-inside: avoid;
+  }
+
+  /* line 503, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+
+  /* line 505, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  /* line 508, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  img {
+    max-width: 100% !important;
+  }
+
+  @page {
+    margin: 0.34in;
+  }
+  /* line 512, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  /* line 519, /Users/anthonyhill/.rvm/gems/ruby-2.0.0-p247/gems/foundation-rails-5.5.3.2/vendor/assets/stylesheets/foundation/components/_type.scss */
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}

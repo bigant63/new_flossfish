@@ -1,0 +1,11 @@
+%div{:id => "main-content", :class => "row large-12 columns", :role =>"content"}
+  %div.small-12.medium-12.large-12.columns
+    %h4.highlight-header=t(:"faq.header").html_safe
+    %ul.faq-list
+      = list_of(t(:"faq.list")) do |item|
+        %p.question.large-12.small-12.columns=item[:q].html_safe
+        -if item[:a].present?
+          %p.answer.large-12.small-12.columns=item[:a].html_safe
+        -if item[:v].present?
+          %a{:href => item[:v], :class => 'play-link'}
+            %i.fa.fa-2.fa-youtube
