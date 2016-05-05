@@ -22,3 +22,8 @@ public/javascripts/bower_components/*.*
 #ignore config deploy files
 /config/deploy/*.*
 /config/database.yml
+
+.idea
+.sass-cache
+public/videos
+log
