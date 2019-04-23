@@ -6,16 +6,15 @@
 
 # Ignore bundler config.
 /.bundle
-
+.idea
 # Ignore the default SQLite database.
 /db/*.sqlite3
 /db/*.sqlite3-journal
-
+new_flossfish.iml
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
 vendor/*.*
-.idea/*.*
 public/videos/*.*
 public/javascripts/bower_components/*.*
 
@@ -23,7 +22,6 @@ public/javascripts/bower_components/*.*
 /config/deploy/*.*
 /config/database.yml
 
-.idea
 .sass-cache
 public/videos
 log
