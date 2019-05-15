@@ -32,7 +32,7 @@ NewFlossfish::Application.routes.draw do
 
   #get "home"
 
-  get 'order' => redirect('http://store.flossfish.com'), :as => :order
+  get 'order' => redirect('http://squareup.com/store/flossfish'), :as => :order
   get 'contactus', to: 'static#contactus'
   get 'instructions', to: 'static#instructions'
   get 'moreinfo', to: 'static#moreinfo'

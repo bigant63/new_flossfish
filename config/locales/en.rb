@@ -483,7 +483,7 @@
     {:value => 'VE', :label => 'Venezuela'},
     {:value => 'VN', :label => 'Viet Nam'},
     {:value => 'EH', :label => 'Western Sahara'},
-    {:value => 'YE', :label => 'Yemen'},
+    {:value => 'YE', :label => 'Yemen'},                                              
     {:value => 'ZR', :label => 'Zaire'},
     {:value => 'ZM', :label => 'Zambia'},
     {:value => 'ZW', :label => 'Zimbabwe'}
@@ -499,8 +499,8 @@
                 :contact_us => 'Contact us'
             },
             :footer_nav => [{:label => 'Order',
-                             :links => [{:label => 'Login', :link => 'http://store.flossfish.com/login.php'},
-                                        {:label => 'Product Catalog', :link => 'http://store.flossfish.com/all-flossfish/'}
+                             :links => [{:label => 'Login', :link => 'http://squareup.com/store/flossfish'},
+                                        {:label => 'Product Catalog', :link => 'http://squareup.com/store/flossfish'}
 =begin
                                         {:label => 'Order Form', :link => '/orderform'}
 =end
@@ -539,7 +539,7 @@ brochures, written instructions
             :promo => 'New FlossFish Orthodontic Kits',
             :flossfish_is => 'The flossFish<sup>(TM)</sup> uses regular dental floss and goes under the wire and between brackets so you can floss normally with braces on without the fuss of using threaders or other devices that can take twice as long or don&#39;t at get your teeth nearly as clean. Take a look at the video on the right to see how it works. You can download the video on the <a href="%{link}">instructions</a> page.',
             :selection => 'The selected locale is automatically passed back to the application within the URL for each request, but <i>does not</i> require explicit setting of the locale within named routes, or session. Once setup, locale selection just works.',
-            :buy_button => {:label => 'Buy Now', :link => 'http://store.flossfish.com/kits/'}
+            :buy_button => {:label => 'Buy Now', :link => 'http://squareup.com/store/flossfish'}
         },
 
         :instructions => {
@@ -609,7 +609,7 @@ brochures, written instructions
                 {:q => 'I am outside of the united States. Do you have a distributor in my country?', :a => 'We might. We do ship worldwide. To see if we currently have a distributor in your country, click the link <a href="/distributors">here</a>.'},
                 {:q => 'Do you give out free samples?', :a => 'Yes, to dental professionals. If you are not a dental professional, you might ask one to request a sample on your behalf. Also if you see someone walking around with the FlossFish logo on their shirt, more than likely they have samples and would be happy to give you one if you ask politely (just not while they&#39re eating dinner or watching a movie) :-)'},
                 {:q => 'How long does the FlossFish last?', :a => 'With proper use, 1 should last at least 6 months.'},
-                {:q => 'Where can I order the FlossFish?', :a => 'You can order at our online store by clicking <a href="http://store.flossfish.com">here</a>.'},
+                {:q => 'Where can I order the FlossFish?', :a => 'You can order at our online store by clicking <a href="http://squareup.com/store/flossfish">here</a>.'},
                 {:q => 'Do patients really use the FlossFish?', :a => 'Yes. During our survey, we found about 70% of patients that are given the FlossFish use it and use it repeatedly.'},
                 {:q => 'Do you recommend the FlossFish for children?', :a => 'It is dependent on the child. By the age most children have braces, the hand-eye coordination needed to use FlossFish has developed but for some children it maybe difficult to use. We encourage parents and dental professionals to help children that have a difficult time using the FlossFish. There maybe a learning curve for some when using the FlossFish. Our studies have shown that once users get past that curve they floss more thus promoting better oral hygiene'},
                  {:q => 'Will the FlossFish work for me?',
@@ -633,7 +633,7 @@ brochures, written instructions
 
         #reviews
         :reviews_header => 'Product reviews',
-        :reviews_intro => 'If you would like to see our latest reviews at our <a href="http://store.flossfish.com" target="_blank">store</a> or at <a href="http://www.amazon.com/flossfish/b/ref=bl_dp_s_web_13106446011?ie=UTF8&node=13106446011&field-lbr_brands_browse-bin=flossfish" target="_blank">Amazon</a> click one the links and a product.',
+        :reviews_intro => 'If you would like to see our latest reviews at our <a href="http://squareup.com/store/flossfish" target="_blank">store</a> or at <a href="http://www.amazon.com/flossfish/b/ref=bl_dp_s_web_13106446011?ie=UTF8&node=13106446011&field-lbr_brands_browse-bin=flossfish" target="_blank">Amazon</a> click one the links and a product.',
         :google_header => 'Product reviews from Google Checkout 2008 - 2013',
             :reviews => [
                 {:stars => '5',
