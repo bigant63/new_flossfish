@@ -2,15 +2,15 @@
 <project version="4">
   <component name="dataSourceStorageLocal">
     <data-source name="Rails new_flossfish: development" uuid="21c805db-104d-4ccb-b43a-2f11c4bff3fc">
-      <secret-storage>memory</secret-storage>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
     </data-source>
     <data-source name="Rails new_flossfish: test" uuid="4d5fecbe-0127-4242-afa3-a7f3fec4debb">
-      <secret-storage>memory</secret-storage>
+      <database-info product="SQLite" version="3.7.6.3" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" dbms="SQLITE" exact-version="3.7.6.3" />
+      <introspection-schemas>*:</introspection-schemas>
     </data-source>
     <data-source name="Rails new_flossfish: production" uuid="517e6c30-7814-4738-b24e-2a24df4a0a23">
-      <first-sync>true</first-sync>
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
       <user-name>rails</user-name>
-      <user-password>dfe1dff9dfc5dff8dffbdfc4df98dfe7df9ddfe2</user-password>
     </data-source>
   </component>
 </project>
