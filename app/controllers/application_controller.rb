@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
 
   protect_from_forgery
-  before_filter :set_available_locales, :set_locale, :valid_locale?
+  before_action :set_available_locales, :set_locale, :valid_locale?
 
   def ajax?
     unless request.xhr?

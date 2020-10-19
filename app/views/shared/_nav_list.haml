@@ -1,6 +1,6 @@
 = list_of(t(:"navigation.main_nav")) do |key,item|
- -unless item.downcase == t(:"navigation.main_nav.home").downcase
-  -unless item.downcase.start_with?(@page_name.downcase)
-   %a{ :href => eval(get_nav(key.to_s)) }= item
-  -else
-   = item
+  -unless item.downcase == t(:"navigation.main_nav.home").downcase
+    -unless item.downcase.start_with?(@page_name.downcase)
+      %a{ :href => eval(get_nav(key.to_s)) }= item
+    -else
+      = item

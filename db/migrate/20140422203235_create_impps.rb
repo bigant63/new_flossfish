@@ -1,4 +1,4 @@
-class CreateImpps < ActiveRecord::Migration
+class CreateImpps < ActiveRecord::Migration[5.1]
   def change
     create_table :impps do |t|
       t.string :contact_id

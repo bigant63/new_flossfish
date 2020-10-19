@@ -14,7 +14,6 @@
             :instructions => 'Instructions page - Welcome to flossfish.com',
             :more_info => 'More Information page - Welcome to flossfish.com',
             :contact_us => 'Contact us page - Welcome to flossfish.com',
-            :distributorinfo => 'Distributor Information page - Welcome to flossfish.com',
             :faqs => 'FAQs page - Welcome to flossfish.com questions and answers page',
             :calendar => 'Calendar page - Welcome to flossfish.com Events page',
             :reviews => 'Reviews page - Welcome to flossfish.com reviews page',
@@ -571,8 +570,7 @@ brochures, written instructions
             :header => 'More Information page',    
             :links => [
               {:label => 'Questions and Answers', :link =>'/faqs', :blurb =>''},
-              {:label => 'Reviews', :link =>'/reviews', :blurb =>''},
-              {:label => 'Distributor Information', :link =>'/distributorinfo', :blurb =>''}
+              {:label => 'Reviews', :link =>'/reviews', :blurb =>''}
             ]
 
           },

@@ -1,4 +1,4 @@
-class CreateContactAttrs < ActiveRecord::Migration
+class CreateContactAttrs < ActiveRecord::Migration[5.1]
   def change
     create_table :contact_attrs do |t|
       t.string :contact_id

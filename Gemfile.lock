@@ -380,6 +380,7 @@ DEPENDENCIES
   capistrano-rbenv
   capybara
   coffee-rails
+  compass
   compass-rails
   cucumber-rails
   database_cleaner
