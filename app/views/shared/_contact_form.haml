@@ -3,11 +3,8 @@
   = form_for @contact, :url => contacts_path, :html => {:class=>'large-12', } do |f|
     %ul
       %li
-       = f.select. :request_type :locals => {options_for_select([["Select One", ""], "Cell", "Work", "Office", "Home", "Other"])}
-      %li
-       = f.text_field, :locals => {:f => subject_element, :data_label =>t(:"form_data.labels.subject")}
-       = f.text_field, :locals => {:f => question_element, :data_label =>t(:"form_data.labels.question")}
-      %li{:data =>{"ng-show" => "addressForm"}} 
+        = f.select :phones, options_for_select(t(:"form_data.phone_selection").map{|i| i.values.reverse})
+      %li{:data =>{"ng-show" => "addressForm"}}
         = f.label :n, t(:"form_data.labels.name")
         = f.text_field :n
       = f.fields_for :addresses  do |address_element|

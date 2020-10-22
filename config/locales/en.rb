@@ -155,6 +155,8 @@
              :address_two => 'Address line 2',
              :name => 'Name',
              :city => 'City',
+             :subject => 'Subject',
+             :question => 'Question',
              :zip => 'Zip/Postal Code',
              :email => 'E-mail',
              :country => 'Country - State/Province',
@@ -162,6 +164,15 @@
              :biz_phone => 'Business Phone',
              :biz_fax => 'Business Fax',
             },
+
+            :phone_selection => [
+                {:value => 'one', :label => 'Select One'},
+                {:value => 'cell', :label => 'Cell'},
+                {:value => 'work', :label => 'Work'},
+                {:value => 'office', :label => 'Office'},
+                {:value => 'home', :label => 'Home'},
+                {:value => 'other', :label => 'Other'}
+            ],
 
             :state_prov_values => [
                 {:value => 'AF', :label => 'Afghanistan'},
