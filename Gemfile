@@ -19,16 +19,22 @@ end
 
 gem 'recaptcha'
 gem 'bcrypt-ruby'
+gem 'puma'
+gem 'capistrano3-puma'
 
 # Use sqlite3 as the database for Active Record
 group :development do
   gem 'sqlite3'
   gem 'guard-spork'
-  gem 'capistrano-rails'
   gem 'capistrano'
-  gem 'capistrano-rbenv'
-  gem 'capistrano-bundler'
+  gem 'capistrano-rails', require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano-rake', require: false
+  gem 'capistrano-rvm'
+  gem 'sshkit-sudo', require: false
+  gem 'sitemap_generator', require: false
 end
+
 
 group :test do
   #gem 'selenium-webdriver', '2.35.1'
